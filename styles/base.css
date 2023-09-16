@@ -20,6 +20,7 @@ header img{
     width: 125px;
 	margin-left: 0.5em;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 20px;
     
 }
 
@@ -78,11 +79,11 @@ main ul {
 
 nav a {
     text-decoration: none;
-    color: #0078d4; 
+    color: #213555; 
 }
 
 footer {
-    color: #F0F0F0;
+    color: white;
     padding: 10px;
     text-align: center;
     border: 1px solid #213555;
@@ -107,11 +108,9 @@ footer {
 		color: #F0F0F0;
 		font-size: 1.7em;
 	}
-    footer {
-        color: #F0F0F0;
-    }
+
 	header img{
-    width: 175px;
+    width: 155px;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     }
 	li::marker{
