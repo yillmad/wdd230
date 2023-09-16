@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yill Cerpa - WDD 230 - Web Frontend Development</title>
+    <meta name="description" content="Welcome to the WDD 230 - Web Frontend Development course assignment portal by Yill Cerpa.">
+    <meta name="author" content="Yill-Cerpa">
+    <link rel="stylesheet" href="styles/base.css">
+</head>
+<body>
+    <header>
+        <img src="profile-photo.jpg" alt="Yill-Cerpa">
+        <h1>Yill Cerpa</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Site Plan</a></li>
+            <li><a href="#">Chamber</a></li>
+            <li><a href="#" target="_blank">BYU-Idaho</a></li>
+            <li><a href="#" target="_blank">Scripture</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h2>WDD 230: Web Frontend Development</h2>
+        <section class="card">
+            <h3>Learning Activities</h3>
+            <ul>
+                <!-- Learning activities will be populated dynamically through JavaScript -->
+                <li><a href="#">Activity 1</a></li>
+                <li><a href="#">Activity 2</a></li>
+                <!-- Add more as needed -->
+            </ul>
+        </section>
+
+        <section class="card">
+            <h3>Information</h3>
+            <!-- Information placeholders -->
+            <p>Weather: <span id="weather">N/A</span></p>
+            <p>Visits: <span id="visits">N/A</span></p>
+            <!-- Add more as needed -->
+        </section>
+    </main>
+    <footer>
+        <p>
+            &copy; <span id="year"></span> | Yill Cerpa 
+        </p>
+        <p>Last Updated: <span id="modify"></span>.</p>
+    </footer>
+<script src="scripts/getdates.js"></script>
+</body>
+</html>

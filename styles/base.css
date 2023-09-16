@@ -1,0 +1,121 @@
+html{
+    background-color: #E5D283;
+}
+
+header{
+    color: #F0F0F0;
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    align-items: center;
+    justify-content: center;
+    background-color: #4F709C;
+    border: 1px solid #213555;
+    margin: 0 auto;
+    padding: 1.5rem;
+    border-radius: 20px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+header img{
+    width: 125px;
+	margin-left: 0.5em;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    
+}
+
+.text-header{
+    margin-bottom: -2%;
+    text-align: center;
+	font-size: 12px;
+}
+
+body {
+    background-color: #F0F0F0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    color: #213555;
+    border: 1px solid #ccc;
+    margin: 0 auto;
+    padding: 20px;
+    max-width: 650px;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    border-radius: 15px;
+}
+
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.card {
+    background-color: #f0e4b1; 
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2, h3 {
+    margin-bottom: 10px;
+}
+
+nav ul {
+    list-style-type: "-";
+    text-align: center;
+}
+
+nav ul li {
+    margin-bottom: 10px;
+}
+
+main ul {
+    list-style-type:decimal;
+    font-size: 0.9em;
+}
+
+nav a {
+    text-decoration: none;
+    color: #0078d4; 
+}
+
+footer {
+    color: #F0F0F0;
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #213555;
+    border-radius: 20px;
+    background-color: #4F709C;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+
+/* Standar size */
+
+@media (min-width: 32.5em){
+    img {
+        float: right;
+    }
+	body{
+		font-size: 20px;
+		color: #213555;
+	}
+	
+    h1{
+		color: #F0F0F0;
+		font-size: 1.7em;
+	}
+    footer {
+        color: #F0F0F0;
+    }
+	header img{
+    width: 175px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    }
+	li::marker{
+		color: #213555;
+		font-size: 1.25em;
+	}
+}
