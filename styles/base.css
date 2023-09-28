@@ -24,7 +24,7 @@ header img{
     
 }
 
-.text-header{
+.text-header{   
     margin-bottom: -2%;
     text-align: center;
 	font-size: 12px;
@@ -104,33 +104,122 @@ footer {
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
+/* Menu */
+#menu {
+	font-size: 1.5rem;
+	border: 1px solid rgba(0,0,0,.3);
+	padding: 3px 7px 6px;
+	background-color: #eee;
+	color: #000;
+ 	position: absolute;
+	top: 5.5%;
+	right: 7%;
+    border-radius: 5px;
+}
+
+#menu::before {
+	content: "☰";
+}
+
+#menu.open::before {
+	content: "X";
+}
+
+.navigation {
+	display: flex;
+	flex-direction: column;
+	list-style: none;
+	background-color: #333;
+	color: #fff;
+}
+.navigation li {
+	display: none;
+}
+.navigation li a {
+	display: block;
+	padding: 1rem;
+	text-align: center;
+	text-decoration: none;
+	color: #fff;
+}
+.navigation li a:hover {
+	background-color: #bbb;
+	color: #333;
+	font-weight: 700;
+}
+
+.open li {
+	display: block;
+	width: 100%;
+}
+
+.open li a {
+	display: block;
+}
+
 
 /* Standar size */
 
-@media (min-width: 32.5em){
+@media (min-width: 32.5em) {
     img {
         float: right;
     }
-	body{
-		font-size: 20px;
-		color: #213555;
-	}
-	
-    h1{
-		color: #F0F0F0;
-		font-size: 1.7em;
-	}
+    body {
+        font-size: 20px;
+        color: #213555;
+    }
+    h1 {
+        color: #F0F0F0;
+        font-size: 1.7em;
+    }
 
-	header img{
+    header img {
         width: 155px;
         box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     }
-	li::marker{
-		color: #213555;
-		font-size: 1.25em;
-	}
-    nav ul{
+    li::marker {
+        color: #213555;
+        font-size: 1.25em;
+    }
+    nav ul {
         display: flex;
+        justify-content: flex-end; 
+    }
+
+    #menu {
+        display: none; 
+    }
+
+    .navigation {
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+        background-color: #333;
+        color: #fff;
+    }
+    .navigation li {
+        display: block; 
+    }
+    .navigation li a {
+        display: block;
+        padding: 1rem;
+        text-align: center;
+        text-decoration: none;
+        color: #fff;
+    }
+    .navigation li a:hover {
+        background-color: #bbb;
+        color: #333;
+        font-weight: 700;
+    }
+
+    .open li {
+        display: block;
+        width: 100%;
+    }
+
+    .open li a {
+        display: block;
     }
 
     nav ul li{
