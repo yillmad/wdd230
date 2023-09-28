@@ -104,16 +104,18 @@ footer {
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
+iframe {
+    width: 100%;
+    height: 250px;
+}
+
 /* Menu */
 #menu {
 	font-size: 1.5rem;
 	border: 1px solid rgba(0,0,0,.3);
-	padding: 3px 7px 6px;
 	background-color: #eee;
 	color: #000;
  	position: absolute;
-	top: 5.5%;
-	right: 7%;
     border-radius: 5px;
 }
 
@@ -132,9 +134,11 @@ footer {
 	background-color: #333;
 	color: #fff;
 }
+
 .navigation li {
 	display: none;
 }
+
 .navigation li a {
 	display: block;
 	padding: 1rem;
@@ -142,6 +146,7 @@ footer {
 	text-decoration: none;
 	color: #fff;
 }
+
 .navigation li a:hover {
 	background-color: #bbb;
 	color: #333;
@@ -157,17 +162,30 @@ footer {
 	display: block;
 }
 
+ul li::marker{
+    color: black;
+    font-size: small;
+    font-weight: bold;
+}
+
+.open .map-container{
+    display: none;
+}
+
 
 /* Standar size */
 
 @media (min-width: 32.5em) {
+
     img {
         float: right;
     }
+
     body {
         font-size: 20px;
         color: #213555;
     }
+
     h1 {
         color: #F0F0F0;
         font-size: 1.7em;
@@ -177,10 +195,13 @@ footer {
         width: 155px;
         box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     }
-    li::marker {
-        color: #213555;
-        font-size: 1.25em;
+
+    ul li::marker{
+        color: black;
+        font-size: large;
+        font-weight: bold;
     }
+
     nav ul {
         display: flex;
         justify-content: flex-end; 
@@ -197,9 +218,11 @@ footer {
         background-color: #333;
         color: #fff;
     }
+
     .navigation li {
         display: block; 
     }
+
     .navigation li a {
         display: block;
         padding: 1rem;
@@ -207,6 +230,7 @@ footer {
         text-decoration: none;
         color: #fff;
     }
+
     .navigation li a:hover {
         background-color: #bbb;
         color: #333;
@@ -224,5 +248,10 @@ footer {
 
     nav ul li{
         flex: 1 1 100%;
+    }
+
+    iframe {
+        width: 100%;
+        height: 450px;
     }
 }
