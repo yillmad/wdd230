@@ -1,0 +1,33 @@
+@media screen and (max-width: 900px) {
+    .hero, .home-grid {
+        display: block;
+        height: auto;
+    }
+    nav, footer {
+        flex-direction: column;
+    }
+    nav a {
+        display: block;
+        padding: 15px;
+    }
+    .hero-message {
+        margin-top: 0;
+    }
+    .hero-message > p {
+        display: none;
+    }
+    .home-title {
+        font-size: 25px;
+        color: #6f7364;
+    }
+    .card1, .card2, .card3 { 
+        margin: 50px auto;
+        width: 60%;
+    }
+    .msg-img {
+        display: block !important;
+    }
+    footer {
+        margin-top: 25px;
+    }
+}
