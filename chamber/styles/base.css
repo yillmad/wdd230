@@ -1,14 +1,10 @@
 @media screen and (max-width: 900px) {
-    .hero, .home-grid {
-        display: block;
-        height: auto;
+    nav .navigation {
+        display: none;
     }
-    nav, footer {
+
+    footer {
         flex-direction: column;
-    }
-    nav a {
-        display: block;
-        padding: 15px;
     }
     .hero-message {
         margin-top: 0;
@@ -16,18 +12,64 @@
     .hero-message > p {
         display: none;
     }
+    
+
+    .home-grid {
+        display: block;
+        height: auto;
+    }
     .home-title {
         font-size: 25px;
-        color: #6f7364;
+        color: #557062;
     }
+
+
     .card1, .card2, .card3 { 
         margin: 50px auto;
         width: 60%;
     }
+
     .msg-img {
-        display: block !important;
+        display: block;
     }
+
+
     footer {
         margin-top: 25px;
+    }
+    .social-media>a>img, footer>a{
+        margin-top: 15px;
+    }
+
+    /* menu */
+    header{
+        grid-template-columns: 200px 1fr;
+        padding: 1rem;
+    }
+    #menu.open::before {
+        content: "X";
+    }
+
+
+    nav .open{
+        display: block;
+        width: 100%;
+    }
+    .open li a {
+        display: block;
+    }
+    #menu {
+        display: block;
+        font-size: 2rem;
+        border: 1px solid rgba(0,0,0,.3);
+        background-color: #eee;
+        color: #000;
+        border-radius: 5px;
+    }
+    #menu::before {
+	content: "☰";
+    }
+    .open{
+        padding: 0;
     }
 }

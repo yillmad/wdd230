@@ -7,9 +7,10 @@
     <meta name="description" content="A platform for local businesses to network and collaborate.">
     <meta name="author" content="Yill-Cerpa">
     <!-- CSS Linked -->
-    <link rel="stylesheet" href="styles/base.css">
-    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="styles/base.css">
     <!-- favicon.ico -->
     <link rel="shortcut" href="images/peru.ico">
     <!-- Open Graph Meta Properties -->
@@ -26,18 +27,21 @@
             <img src="images/logo3.png" alt="Chamber Siye Logo" width="60">
         </a>
         <nav>
-            <a href="index.html">Home</a>
-            <a href="#">Information</a>
-            <a href="#">Membership</a>
-            <a href="#">Events</a>
-            <a href="#">Contact</a>
-            <a href="#">F.A.Q.</a>
+            <button id="menu"></button>
+            <ul class="navigation">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Information</a></li>
+                <li><a href="#">Membership</a></li>
+                <li><a href="#">Events</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">F.A.Q.</a></li>
+            </ul>
         </nav>
     </header>
 
     <div class="hero">
         <div class="hero-box">
-            <img class="hero-img" src="images/hero.jpg" alt="hero image" width="100%">
+            <img class="hero-img" src="images/hero.jpg" alt="peruvian banner" width="100%">
         </div>
         <section class="hero-message">
             <h1 class="home-title">Peruvian Business Network Chamber</h1>
@@ -53,22 +57,32 @@
     <main class="home-grid">
         
         <div class="subtitle">
-            <h1>Main Turistic Places In Peru:</h1>
+            <h1>Company's Spothlights:</h1>
         </div>
         <section class="card1">
-            <img class="img-card" src="images/cusco.jpg" alt="image of the first card">
-            <h2>Cusco:</h2>
-            <p>Donde la historia cobra vida</p>
+            <img class="img-card" src="images/cusco.jpg" alt="Cusco's picture">
+            <h2>Andes Adventures - <i>Discover Peru's Hidden Treasures</i></h2>
+            <p>Andes Adventures is your gateway to unforgettable Peruvian adventures. As a leading tour operator, 
+                we specialize in crafting unique experiences that showcase the natural beauty, rich culture, 
+                and historical wonders of Peru. From trekking the Inca Trail to exploring the Amazon Rainforest, 
+                our expert guides will lead you on an unforgettable journey. Join us and immerse yourself in 
+                the magic of Peru.</p>
         </section>
         <section class="card2">
-            <img class="img-card" src="images/arequipa.jpg" alt="image of the second card">
-            <h2>Arequipa: </h2>
-            <p>Donde la tradición se encuentra con la belleza</p>
+            <img class="img-card" src="images/artisans.jpg" alt="Arequipa's picture">
+            <h2>IncaCrafts Emporium - <i>Authentic Peruvian Artisans</i></h2>
+            <p>At IncaCrafts Emporium, we celebrate Peru's vibrant culture through exquisite handmade crafts. 
+                Our artisans create unique pieces that reflect the traditions and heritage of Peru. From colorful 
+                textiles and pottery to intricate jewelry, every item tells a story. Explore our online store 
+                and bring a piece of Peru's artistic heritage into your life.</p>
         </section>
         <section class="card3">
-            <img class="img-card" src="images/lima.webp" alt="image of the third card">
-            <h2>Lima: </h2>
-            <p>Donde el pasado se fusiona con el presente</p>
+            <img class="img-card" src="images/peruvian-food.jpg" alt="Lima's picture">
+            <h2>Lima Gourmet Tours - <i>Savor the Flavors of Peru</i></h2>
+            <p>Lima Gourmet Tours invites you to embark on a culinary adventure through Peru's gastronomic paradise. 
+                Discover the secrets of Peruvian cuisine as you taste your way through Lima's top restaurants, 
+                food markets, and street vendors. Our guided food tours offer an authentic and delicious immersion 
+                into Peru's culinary world.</p>
         </section>
         
         <section class="msg-img">
@@ -76,8 +90,33 @@
                 <img src="images/msg-img.jpg" alt="kind of hero">
             </div>               
             <div class="msg">
-                <h2>Peruvian Business Network Chamber</h2>
-                <p>Discover our Peruvian Network: Where adventure and culture meet.</p>
+                <h2>Current Events</h2>
+                <ul>
+                    <li>
+                        <h3>New Travel Regulations for Machu Picchu Visitors</h3>
+                        <p>Stay up-to-date with the latest regulations and entry requirements for visiting the iconic Machu Picchu. │ 
+                            <a class=read-more href="#"><b>Read More</b></a>
+                        </p>
+                    </li>
+                    <li>
+                        <h3>Peru Welcomes International Travelers</h3>
+                        <p>Learn about Peru's reopening to international tourists and the safety measures in place. │ 
+                            <a class=read-more href="#"><b>Read More</b></a>
+                        </p>
+                    </li>
+                    <li>
+                        <h3>Exploring the Amazon: Eco-Tourism on the Rise</h3>
+                        <p>Discover the growing trend of eco-tourism in the Peruvian Amazon and how you can be a part of it. │ 
+                            <a class=read-more href="#"><b>Read More</b></a>
+                        </p>
+                    </li>
+                    <li>
+                        <h3>Festival Season in Cusco: What You Need to Know</h3>
+                        <p>Find out about the upcoming festivals and cultural events in Cusco and how to experience them. │ 
+                            <a class=read-more href="#"><b>Read More</b></a>
+                        </p>
+                    </li>
+                </ul>
                 <a class="boton" href="#">Join Us</a>
             </div>
         </section>
@@ -103,6 +142,8 @@
         </div>
 
     </footer>
+
+<script src="scripts/hambutton.js"></script>
 
 </body>
 <body>

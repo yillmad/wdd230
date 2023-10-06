@@ -12,31 +12,39 @@ body{
 
 
 /* header */
+#menu{
+    display: none;
+}
 header{
     display: grid;
     grid-template-columns: 100px auto;
     background-color: var(--secondary-color);
-    font-size: calc(10px + 1vw);
+    font-size: calc(min(10px + 1vw, 20px));
 }
 .logo{
     align-self: center;
     justify-self: center;
 }
-nav{
-    display: flex;
-    align-items: center;
-}
-nav a{
-    color: var(--accent2-color);
-    text-align: center;
-    text-decoration: none;
-    padding: 35px;
-    flex-grow: 1;
-}
-nav a:hover{
-    background-color: var(--primary-color);
-}
 
+
+nav .navigation{
+    display: flex;
+    flex-grow: 1;
+    margin: 0;
+}
+.navigation li{
+    flex-grow: 1;
+    text-align: center;
+    list-style: none;
+    padding: 25px;
+}
+.navigation li:hover{
+    background-color: var(--accent1-color);
+}
+.navigation a{
+    text-decoration: none;
+    color: var(--accent2-color);
+}
 
 /* hero */
 .hero{
@@ -57,7 +65,7 @@ nav a:hover{
     border-radius: 25px;
     padding: 1rem;
     align-items: center;
-    font-size: calc(6px + 1vw);
+    font-size: calc(min(6px + 1vw, 23px));
 }
 .hero-message>p{
     margin-top: 0;
@@ -84,7 +92,7 @@ main{
     display: flex;
     flex-direction: column;
     text-align: center;
-    font-size: calc(7px + 1vw);
+    font-size: calc(min(7px + 1vw, 21px));
 }
 .card1>p, .card2>p, .card3>p{
     margin-top: 0;
@@ -103,7 +111,6 @@ main{
 }
 .img-card{
     width: 100%;
-    height: 100%;
     border-radius: 25px;
 }
 
@@ -113,7 +120,7 @@ main{
     grid-column: 1/4;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.2fr 1fr 1fr 1fr 0.2fr;
     padding: 3rem;
 }
 .last-img{
@@ -129,9 +136,25 @@ main{
     background-color: var(--accent1-color);
     grid-column: 5/9;
     grid-row: 2/5;
-    text-align: center;
-    font-size: calc(9px + 1vw);
+    font-size: calc(min(4px + 1vw, 17px));
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
+ul>li>p, ul>li>h3, .msg>h2{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.read-more{
+    color:black
+}
+.read-more:hover{
+    color: var(--accent2-color);
+}
+.msg .boton{
+    text-align: center;
+}
+
 
 
 .boton{
@@ -171,4 +194,5 @@ footer p~a {
 }
 a>img {
     width: 40px;
+    margin-left: 30px;
 }
