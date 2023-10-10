@@ -45,6 +45,9 @@ nav .navigation{
     text-decoration: none;
     color: var(--accent2-color);
 }
+.navigation :first-of-type{
+    background-color: #FFFFFF;
+}
 
 /* hero */
 .hero{
