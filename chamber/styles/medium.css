@@ -58,6 +58,9 @@ nav .navigation{
     grid-column: 1/4;
     grid-row: 1/4;
 }
+.hero-img{
+    width: 100%;
+}
 .hero-message{
     display: flex;
     flex-direction: column;
