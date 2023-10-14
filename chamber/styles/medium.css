@@ -2,14 +2,41 @@
 
 body{
     margin: 0px;
+    background-color: var(--backgroundc-color);
 }
 :root {
     --primary-color: #AE493F   ;
     --secondary-color: #557062 ;
     --accent1-color: #C08431;
     --accent2-color: #FFFFFF;
+    --backgroundc-color: #FFFFFF;
+    --font-color: #000000;
+    --hero-box-background: rgba(255, 255, 255, 0.8);
+    --read-more: #000000
 }
 
+/* dark mode */
+
+.dark-mode-button{
+    position: absolute;
+    right: 2%;
+    top: 3%;
+}
+#dark-icon{
+    width: 50px;
+    position: relative;
+    cursor: pointer;
+}
+.dark-theme{
+    --primary-color: #621708  ;
+    --secondary-color: #0c1821 ;
+    --accent1-color: #343a40;
+    --accent2-color: #FFFFFF;
+    --backgroundc-color: #343a40;
+    --font-color: #FFFFFF;
+    --hero-box-background: rgba(0,0,0,0.8);
+    --read-more: #FFFFFF;
+}
 
 /* header */
 #menu{
@@ -53,6 +80,7 @@ nav .navigation{
 .hero{
     display: grid;
     grid-template-columns: 1fr 3fr 1fr;
+    position:relative;
 }
 .hero-box{
     grid-column: 1/4;
@@ -67,11 +95,12 @@ nav .navigation{
     grid-column: 2/3;
     grid-row: 2/3;
     text-align: center;
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: var(--hero-box-background);
     border-radius: 25px;
     padding: 1rem;
     align-items: center;
     font-size: calc(min(6px + 1vw, 23px));
+    color: var(--font-color);
 }
 .hero-message>p{
     margin-top: 0;
@@ -81,16 +110,16 @@ nav .navigation{
 main{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    color: var(--font-color);
 }
-
 
 .subtitle{
     display: block;
     padding-left: 2rem;
     padding-top: 0.5rem;
     grid-column: 1/6;
+    font-size: calc(min(14px + 1vw, 28px));
 }
-
 
 .card1, .card2, .card3{
     padding: 2.5rem;
@@ -119,7 +148,6 @@ main{
     width: 100%;
     border-radius: 25px;
 }
-
 
 .msg-img{
     background-color: var(--primary-color);
@@ -152,7 +180,7 @@ ul>li>p, ul>li>h3, .msg>h2{
     margin-bottom: 0;
 }
 .read-more{
-    color:black
+    color:var(--read-more);
 }
 .read-more:hover{
     color: var(--accent2-color);
@@ -160,8 +188,6 @@ ul>li>p, ul>li>h3, .msg>h2{
 .msg .boton{
     text-align: center;
 }
-
-
 
 .boton{
     display: block;
