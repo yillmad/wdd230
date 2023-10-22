@@ -24,7 +24,7 @@
 
     <header>
         <a class="logo" href="index.html">
-            <img src="images/logo3.png" alt="Chamber Siye Logo" width="60">
+            <img src="images/logo3.webp" alt="Chamber Siye Logo" width="60">
         </a>
         <nav>
             <button id="menu"></button>
@@ -41,7 +41,11 @@
 
     <div class="hero">
         <div class="hero-box">
-            <img class="hero-img" src="images/hero.jpg" alt="peruvian banner">
+            <picture class="hero-img">
+                <source srcset="images/hero-small.jpg" media="(max-width: 500px)">
+                <source srcset="images/hero-med.jpg" media="(max-width: 1000px)">
+                <img src="images/hero-large.jpg" alt="hero-img" width="1280" height="491.52">
+            </picture>
         </div>
         <div class="dark-mode-button">
             <img id="dark-icon"src="images/moon.png" alt="">
@@ -63,7 +67,7 @@
             <h2>Company's Spothlights:</h2>
         </div>
         <section class="card1">
-            <img class="img-card" src="images/cusco.jpg" alt="Cusco's picture">
+            <img class="img-card" src="images/spolight-cusco.jpg" alt="Cusco's picture">
             <h2>Colca's Adventures - <i>Discover Arequipa's Hidden Treasures</i></h2>
             <p>Colca's Adventures is your gateway to unforgettable Arequipa's adventures. As a leading tour operator, 
                 we specialize in crafting unique experiences that showcase the natural beauty, rich culture, 
@@ -72,7 +76,7 @@
                 the magic of Arequipa.</p>  
         </section>
         <section class="card2">
-            <img class="img-card" src="images/artisans.jpg" alt="Arequipa's picture">
+            <img class="img-card" src="images/spolight-artisans.jpg" alt="Arequipa's picture">
             <h2>IncaCrafts Emporium - <i>Authentic Arquipa Artisans</i></h2>
             <p>At IncaCrafts Emporium, we celebrate Arequipa's vibrant culture through exquisite handmade crafts. 
                 Our artisans create unique pieces that reflect the traditions and heritage of the city. From colorful 
@@ -80,7 +84,7 @@
                 and bring a piece of Arequipa's artistic heritage into your life.</p>
         </section>
         <section class="card3">
-            <img class="img-card" src="images/peruvian-food.jpg" alt="Lima's picture">
+            <img class="img-card" src="images/spolight-arequipa-gourmet.jpg" alt="Lima's picture">
             <h2>Arequipa Gourmet Tours - <i>Savor the Flavors of Arequipa</i></h2>
             <p>Arequipa Gourmet Tours invites you to embark on a culinary adventure through Peru's gastronomic paradise. 
                 Discover the secrets of Peruvian cuisine as you taste your way through Lima's top restaurants, 
@@ -88,9 +92,30 @@
                 into Peru's culinary world.</p>
         </section>
         
+        <div class="weather-container">
+            <div class="weather-widget">
+                <div class="weather-left"> 
+                    <img class="weather-icon" src="images/weather-icon-rain.png" alt="weather icon">
+                    <h5 class="weather-status">Partly Cloud</h5>
+                </div>
+                <div class="weather-right">
+                    <h5 class="city">Arequipa</h5>
+                    <h5 class="degree">25 °C</h5>
+                </div>
+                <div class="weather-bottom">
+                    <div>
+                        Wind Speed <span class="wind-speed"> 22km/h</span>
+                    </div>
+                    <div>
+                        Wind Chill <span>21 °C</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <section class="msg-img">
             <div class="last-img">
-                <img src="images/msg-img.jpg" alt="kind of hero">
+                <img src="images/4-3-msg-img-medium.jpg" alt="kind of hero">
             </div>               
             <div class="msg">
                 <h2>Current Events</h2>
@@ -135,20 +160,22 @@
 
         <div class="social-media">
             <a href="https://facebook.com" target="_blank">
-                <img src="images/logo-facebook.png" alt="facebook">
+                <img src="images/logo-facebook.webp" alt="facebook">
             </a>
             <a href="https://twitter.com" target="_blank">
-                <img src="images/logo-twitter.png" alt="twitter">
+                <img src="images/logo-twitter.webp" alt="twitter">
             </a>
             <a href="https://instagram.com" target="_blank">
-                <img src="images/logo-instagram.png" alt="instagram">
+                <img src="images/logo-instagram.webp" alt="instagram">
             </a>
         </div>
 
     </footer>
 
+<!-- scripts -->
 <script src="scripts/hambutton.js"></script>
 <script src="scripts/darkmode.js"></script>
+<script src="scripts/weather.js"></script>
 
 </body>
 </html>

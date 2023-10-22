@@ -1,4 +1,4 @@
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 940px) {
     nav .navigation {
         display: none;
     }
@@ -23,9 +23,17 @@
     }
 
 
-    .card1, .card2, .card3 { 
+    .card1, .card2, .card3, .weather-container{ 
         margin: 50px auto;
         width: 60%;
+    }
+
+    .weather-widget{
+        margin: 50px auto;
+        transform: none;
+        left: 0;
+        display: flex;
+        flex-direction: row;
     }
 
     .msg-img {

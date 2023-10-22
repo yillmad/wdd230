@@ -12,7 +12,8 @@ body{
     --backgroundc-color: #FFFFFF;
     --font-color: #000000;
     --hero-box-background: rgba(255, 255, 255, 0.8);
-    --read-more: #000000
+    --read-more: #000000;
+    --weather-background: rgba(0, 0, 0, 0.4);
 }
 
 /* dark mode */
@@ -36,6 +37,7 @@ body{
     --font-color: #FFFFFF;
     --hero-box-background: rgba(0,0,0,0.8);
     --read-more: #FFFFFF;
+    --weather-background: rgba(299, 299, 299, 0.4);
 }
 
 /* header */
@@ -86,8 +88,12 @@ nav .navigation{
     grid-column: 1/4;
     grid-row: 1/4;
 }
-.hero-img{
+.hero-img picture{
     width: 100%;
+}
+.hero-img img{
+    width: 100%;
+    height: auto;
 }
 .hero-message{
     display: flex;
@@ -148,7 +154,79 @@ main{
     width: 100%;
     border-radius: 25px;
 }
-
+/* weather widget */
+.weather-container{
+    grid-column: 1/4;
+    grid-row: 3/4;
+    position: relative;
+    margin-bottom: 35px;
+}
+.weather-widget{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width:400px;
+    height:200px;
+    border-radius: 20px;
+    background: var(--weather-background);
+}
+.weather-widget .weather-left{
+    position: absolute;
+    left: 0;
+    width: 200px;
+}
+.weather-widget .weather-right{
+    position: absolute;
+    right: 0;
+    width: 200px;
+    color: var(--accent2-color);
+    margin: 50px 0;
+}
+.weather-icon{
+    width: 75%;
+    margin-bottom: -15px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.weather-status{
+    color: var(--accent2-color);
+    text-align: center;
+    margin-top: 0;
+}
+.weather-widget .weather-right .city{
+    font-size: 1em;
+    text-align: center;
+    margin: 0;
+    text-shadow: 1px 1px 5px #707070;
+}
+.weather-widget .weather-right .degree{
+    font-size: 3em;
+    font-weight: bold;
+    text-align: center;
+    margin: 0;
+    text-shadow: 1px 1px 5px #707070;
+}
+.weather-widget .weather-bottom{
+    width: 100%;
+    position: absolute;
+    bottom: 10px;
+    display: flex;
+    justify-content: center;
+    color: var(--accent2-color);
+}
+.weather-widget .weather-bottom div{
+    margin: 5px 10px 5px 10px;
+    text-align: center;
+    line-height: 100%;
+    font-size: 0.83em;
+    text-shadow: 1px 1px 5px #707070;
+}
+.weather-bottom div span{
+    display: block;
+}
+/* msg image */
 .msg-img{
     background-color: var(--primary-color);
     grid-column: 1/4;
