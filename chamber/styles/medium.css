@@ -306,3 +306,95 @@ a>img {
     width: 40px;
     margin-left: 30px;
 }
+
+/* discover page */
+
+#discover {
+    background-color: #fff;
+    padding: 2rem;
+    margin: 2rem;
+    border-radius: 10px;
+}
+
+#sidebar-grid {
+    display: grid;
+    grid-template-columns: 0.5fr 1fr;
+    grid-template-rows: 0.35fr 1fr;
+    grid-gap: 10px;
+    grid-template-areas: "sidebar1 main";
+    text-align: center;
+}
+
+#sidebar {
+    grid-area: sidebar1;
+    color: var(--font-color);
+    padding: 2rem;
+    margin: 2rem;
+    border-radius: 10px;
+    border-color: var(--primary-color);
+    border-style: solid;
+    position: sticky;
+    top: 25%;
+    height: auto;
+    grid-row: 1 / 2;
+}
+
+#detailed-events {
+    grid-area: main;
+    color: var(--font-color);
+    padding-top: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    margin-right: 2rem;
+    border-radius: 10px;
+    border-color: var(--primary-color);
+    border-style: solid;
+    grid-row: 1/3;
+}
+
+.local-interest img {
+    width: 50%;
+    height: auto;
+    border-radius: 10%;
+}
+
+.local-interest img:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+    box-shadow: 0 0 10px var(--nav-link-color);
+}
+
+.joinForm {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.1fr 1fr;
+    grid-template-areas:
+      "header header"
+      "form table";
+}
+
+form label.sbs {
+    padding: 0.4rem 0;
+}
+
+.memberLevels {
+    height: 40%;
+    position: sticky;
+    top: 25%;
+}
+
+  /* CSS for Discover Page */
+
+.grid {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+}
+
+.list .company-info {
+    flex-direction: row;
+}
+
+.list .company-info:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+    box-shadow: 0 0 10px var(--nav-link-color);
+}
