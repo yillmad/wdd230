@@ -74,7 +74,7 @@ nav .navigation{
     text-decoration: none;
     color: var(--accent2-color);
 }
-#home{
+#current{
     background-color: var(--primary-color);
 }
 
