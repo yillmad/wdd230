@@ -28,14 +28,6 @@
         width: 60%;
     }
 
-    .weather-widget{
-        margin: 50px auto;
-        transform: none;
-        left: 0;
-        display: flex;
-        flex-direction: row;
-    }
-
     .msg-img {
         display: block;
     }
@@ -79,4 +71,17 @@
     .open{
         padding: 0;
     }
+
+    /* weather box */
+    .weather-widget{
+        display: flex;
+        flex-direction: column;
+    }
+    .degree{
+        margin: 0;
+    }
+    .weather-icon{
+        width: 70%;
+    }
+
 }

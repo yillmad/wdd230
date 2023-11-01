@@ -154,78 +154,55 @@ main{
     width: 100%;
     border-radius: 25px;
 }
-/* weather widget */
+
 .weather-container{
-    grid-column: 1/4;
     grid-row: 3/4;
-    position: relative;
-    margin-bottom: 35px;
+    grid-column: 1/4;
+    text-align: center;
+    justify-content: center;
+    background-color: var(--weather-background);
+    margin: 5px 20% 50px 20%;
+    border-radius: 20px;
+    color: var(--backgroundc-color);
+    text-shadow: 1px 1px 5px #707070;
 }
 .weather-widget{
-    position: relative;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width:400px;
-    height:200px;
-    border-radius: 20px;
-    background: var(--weather-background);
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
 }
-.weather-widget .weather-left{
-    position: absolute;
-    left: 0;
-    width: 200px;
-}
-.weather-widget .weather-right{
-    position: absolute;
-    right: 0;
-    width: 200px;
-    color: var(--accent2-color);
-    margin: 50px 0;
-}
-.weather-icon{
-    width: 75%;
-    margin-bottom: -15px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-.weather-status{
-    color: var(--accent2-color);
-    text-align: center;
-    margin-top: 0;
-}
-.weather-widget .weather-right .city{
-    font-size: 1em;
-    text-align: center;
-    margin: 0;
-    text-shadow: 1px 1px 5px #707070;
-}
-.weather-widget .weather-right .degree{
-    font-size: 3em;
-    font-weight: bold;
-    text-align: center;
-    margin: 0;
-    text-shadow: 1px 1px 5px #707070;
-}
-.weather-widget .weather-bottom{
-    width: 100%;
-    position: absolute;
-    bottom: 10px;
+.weather-left{
+    grid-column: 1/2;
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    color: var(--accent2-color);
+    align-items: center;
+    font-size: 25px;
 }
-.weather-widget .weather-bottom div{
-    margin: 5px 10px 5px 10px;
-    text-align: center;
-    line-height: 100%;
-    font-size: 0.83em;
-    text-shadow: 1px 1px 5px #707070;
+.weather-right{
+    grid-column: 2/3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
 }
-.weather-bottom div span{
-    display: block;
+.degree{
+    font-size: calc(min(10px + 10vw, 70px));
+    margin-top: 40px;
+    margin-bottom: 10px;
 }
+.city, .weather-status{
+    margin: 0;
+}
+
+.weather-bottom{
+    grid-column: 1/3;
+    grid-row: 2/3;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
 /* msg image */
 .msg-img{
     background-color: var(--primary-color);
