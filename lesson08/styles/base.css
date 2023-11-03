@@ -1,0 +1,42 @@
+:root{
+    --primary-color:black;
+    --secondary-color:grey;
+    --row-color1:white;
+    --row-color2:lightgrey;
+}
+
+table{
+    margin: 10px auto;
+    border: thin solid;
+    border-collapse: collapse;
+}
+
+caption{
+    padding: 10px;
+    caption-side: bottom;
+    font-size: 1rem;
+}
+
+th, td {
+    padding: 7px 15px;
+    border: 1px solid var(--primary-color);
+}
+
+th {
+    background-color: var(--primary-color);
+    font-size: larger;
+    color: hsla(0,0%,100%,1);
+
+}
+
+th:nth-child(n+2){
+    background-color: var(--secondary-color);
+}
+
+td{
+    text-align: center;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: var(--row-color2);
+}
