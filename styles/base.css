@@ -113,10 +113,6 @@ nav a {
     font-size: 15px;
 }
 
-nav a:hover{
-    border: 1px solid #fff;
-}
-
 main ul {
     list-style-type:decimal;
     font-size: 0.9em;
@@ -180,6 +176,12 @@ iframe {
 
 .navigation li a:hover {
 	background-color: #bbb;
+	color: #333;
+	font-weight: 700;
+}
+
+.navigation .current{
+    background-color: #bbb;
 	color: #333;
 	font-weight: 700;
 }
