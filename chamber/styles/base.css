@@ -84,4 +84,11 @@
         width: 70%;
     }
 
+    /* form and table */
+
+    #grid-form{
+        display: flex;
+        flex-direction: column;
+    }
+
 }

@@ -355,12 +355,6 @@ form label.sbs {
     padding: 0.4rem 0;
 }
 
-.memberLevels {
-    height: 40%;
-    position: sticky;
-    top: 25%;
-}
-
   /* CSS for Discover Page */
 
 .grid {
@@ -438,7 +432,6 @@ form button {
     padding: .75rem 1.5rem;
     margin: 0 0 2rem 2%;
     width: 96%;
-    max-width: 20rem;
 }
 
 button:hover{
@@ -448,7 +441,7 @@ button:hover{
 /* members benefits */
 
 .memberLevels {
-    background-color: rgba(7, 7, 7, 0.247);
+    background-color: var(--backgroundc-color);
     text-align: center;
     border: 1px solid var(--primary-color);
     padding: 0.5rem;
@@ -458,39 +451,55 @@ button:hover{
     height: 100%;
     max-height: 400px;
     margin: auto;
-  }
+}
   
-  .memberLevels h3 {
+.memberLevels h3 {
     color: var(--font-color);
-  }
+}
   
-  .memberLevels table {
+.memberLevels table {
     border-collapse: collapse;
     width: 100%;
     font-size: 0.8rem;
     text-align: left;
     color: var(--font-color);
+}
   
-  }
-  
-  .memberLevels th,
-  .memberLevels td {
+.memberLevels th,
+.memberLevels td {
     padding: 0.5rem;
     border: 1px solid var(--accent3-color);
-  }
+}
   
-  .memberLevels th {
+.memberLevels th {
     background-color: var(--primary-color);
-    color: var(--font-color);
-  }
+    color: var(--accent2-color);
+}
   
-  .memberLevels tr:nth-child(even) {
+.memberLevels tr:nth-child(even) {
     background-color: var(--primary-color);
-  }
+    color: var(--accent2-color);
+}
   
-  .memberLevels table caption {
+.memberLevels table caption {
     font-weight: bold;
     padding: 0.5rem;
     caption-side: bottom;
-  }
-  
+}
+
+/* thanks page */
+
+#thanks{
+    grid-column: 1/4;
+    text-align: center;
+    font-size: calc(min(30px + 3vw, 70px));
+    margin: 5% 10% 5% 10%;
+}
+
+#tanks-message{
+    grid-row: 2/3;
+    grid-column: 1/4;
+    text-align: center;
+    font-size: calc(min(20px + 1vw, 30px));
+    margin: 5% 10% 10% 10%;
+}
