@@ -47,8 +47,8 @@
 
             <p>🚩Indicates a required field </p>
 
-            <label for="first-name">🚩Applicant's First Name:</label>
-            <input type="text" id="first-name" name="first-name" required>
+            <label for="first-name">🚩Applicant's First Name:
+            <input type="text" id="first-name" name="first-name" required> </label>
 
             <label for="last-name">🚩Applicant's Last Name:</label>
             <input type="text" id="last-name" name="last-name" required>
@@ -86,15 +86,62 @@
     </form>
 
     <!-- Membership Benefits -->
-    <div id="membership-benefits">
-        <h2>Membership Benefits</h2>
-        <ul>
-            <li>NP Membership: No fee</li>
-            <li>Bronze Membership: Benefits for Bronze members</li>
-            <li>Silver Membership: Benefits for Silver members</li>
-            <li>Gold Membership: Benefits for Gold members</li>
-        </ul>
-    </div>
+    <div class="memberLevels">
+        <!-- Table with Member Levels. Showing Costs and Benefits -->
+        <h3>Member Cost and Benefits</h3>
+        <table>
+          <caption>Member Levels</caption>
+          <thead>
+            <tr>
+              <th>Membership Level</th>
+              <th>Cost</th>
+              <th>Benefits</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>NP</td>
+              <td>Free</td>
+              <td>
+                <ul>
+                  <li>Same As Gold</li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <td>Bronze</td>
+              <td>$100</td>
+              <td>
+                <ul>
+                  <li>Listing on Directory</li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <td>Silver</td>
+              <td>$200</td>
+              <td>
+                <ul>
+                  <li>Listing on Directory</li>
+                  <li>Event Participation</li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <td>Gold</td>
+              <td>$300</td>
+              <td>
+                <ul>
+                  <li>Listing on Directory</li>
+                  <li>Event Participation</li>
+                  <li>Discounts on Advertising</li>
+                </ul>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      
     </main>
 
     <footer>
