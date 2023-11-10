@@ -1,0 +1,38 @@
+{
+    "familyName": "Cerp Vilela",
+    "dateMoved": "2023-11-08",
+    "numberMembers": 5,
+    "bishopInterview": true,
+    "members": [
+        {
+            "name": "Yill",
+            "gender": "male",
+            "birthdate": "1998-01-25"
+        },
+        {
+            "name": "Kent",
+            "gender": "male",
+            "birthdate": "1996-03-23"
+        },
+        {
+            "name": "Lyn",
+            "gender": "female",
+            "birthdate": "1991-04-06"
+        }, 
+        {
+            "name": "Eimy",
+            "gender": "female",
+            "birthdate": "1990-02-25"
+        },
+        {
+            "name": "Teresa",
+            "gender": "female",
+            "birthdate": "1964-10-16"
+        },
+        {
+            "name": "Willan",
+            "gender": "male",
+            "birthdate": "1963-05-05"
+        }
+    ]
+}

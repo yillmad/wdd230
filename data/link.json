@@ -1,0 +1,122 @@
+{
+    "lessons": [
+        {
+            "lesson": 1,
+            "links": [
+                {
+                    "url": "https://yillmad.github.io/wdd230/lesson01/holygrail.html",
+                    "title": "Holy Grail"
+                },
+                {
+                    "url": "https://codepen.io/Yill-Cerpa-vilela/pen/poqWjzr",
+                    "title": "Applied JS"
+                },
+                {
+                    "url": "https://yillmad.github.io/wdd230/lesson01/media-query.html",
+                    "title": "Media Query"
+                }
+            ]
+        },
+        {
+            "lesson": 2,
+            "links": [
+                {
+                    "url": "https://yillmad.github.io/wdd230/lesson02/design.html",
+                    "title": "Design"
+                },
+                {
+                    "url": "https://yillmad.github.io/wdd230/lesson02/design-principles.html",
+                    "title": "Design Principles"
+                }
+            ]
+        },
+        {
+            "lesson": 3,
+            "links": [
+                {
+                    "url": "https://yillmad.github.io/wdd230/images/css-combinator.png",
+                    "title": "CSS Combinators"
+                },
+                {
+                    "url": "https://codepen.io/Yill-Cerpa-vilela/pen/rNovQgW",
+                    "title": "CSS Pseudo-elements"
+                },
+                {
+                    "url": "https://codepen.io/Yill-Cerpa-vilela/pen/vYvjbNE",
+                    "title": "Responsive Menu"
+                }
+            ]
+        },
+        {
+            "lesson": 4,
+            "links": [
+                {
+                    "url": "https://codepen.io/Yill-Cerpa-vilela/pen/QWzZvoG",
+                    "title": "CSS Pseudo-Classes"
+                }
+            ]
+        },
+        {
+            "lesson": 5,
+            "links": [
+                {
+                    "url": "https://yillmad.github.io/wdd230/lesson05/bom.html",
+                    "title": "BOM"
+                }
+            ]
+        },
+        {
+            "lesson": 6,
+            "links": [
+                {
+                    "url": "https://yillmad.github.io/wdd230/lesson06/images/landscape.webp",
+                    "title": "WebP"
+                },
+                {
+                    "url": "https://yillmad.github.io/wdd230/lesson06/responsive-images.html",
+                    "title": "Responsive Images"
+                }
+            ]
+        },
+        {
+            "lesson": 7,
+            "links": [
+                {
+                    "url": "https://yillmad.github.io/wdd230/lesson07/lazyload.html",
+                    "title": "Lazy Load"
+                },
+                {
+                    "url": "https://yillmad.github.io/wdd230/v",
+                    "title": "BOM 2"
+                }
+            ]
+        },
+        {
+            "lesson": 8,
+            "links": [
+                {
+                    "url": "https://yillmad.github.io/wdd230/lesson08/tablebuild.html",
+                    "title": "Table Build"
+                },
+                {
+                    "url": "https://yillmad.github.io/wdd230/lesson08/form-start/index.html",
+                    "title": "Form"
+                }
+            ]
+        },
+        {
+            "lesson": 9,
+            "links": [
+                {
+                    "url": "https://yillmad.github.io/wdd230/lesson09/new-ward-members.json",
+                    "title": "New Ward Members"
+                },
+                {
+                    "url": "https://yillmad.github.io/wdd230/lesson09/prophets.html",
+                    "title": "Prophets"
+                }
+            ]
+        }
+
+    ]
+}
