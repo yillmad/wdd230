@@ -1,47 +1,27 @@
 const baseURL = "https://yillmad.github.io/wdd230/";
 const linksURL = `${baseURL}data/links.json`;
+const ActivitiesElement = document.querySelector("#activities");
 
 async function getLinks() {
-  try {
     const response = await fetch(linksURL);
     const data = await response.json();
-    displayLinks(data);
-  } catch (error) {
-    console.error("Error fetching links data:", error);
-  }
+    keys= Object.keys(data);
+    displayLinks(data,keys);
 }
 
-function displayLinks(weeks) {
-  const linksContainer = document.querySelector('#links');
-  if (!linksContainer) return;
-
-  weeks.forEach((week) => {
-    const weekTitle = week.week;
-    const weekLinks = week.links;
-
-    const weekSection = document.createElement('section');
-    weekSection.classList.add('week');
-
-    const weekHeading = document.createElement('h2');
-    weekHeading.textContent = weekTitle;
-    weekSection.appendChild(weekHeading);
-
-    const linksList = document.createElement('ul');
-    linksList.classList.add('links-list');
-
-    weekLinks.forEach((link) => {
-      const listItem = document.createElement('li');
-      const linkElement = document.createElement('a');
-      linkElement.href = `${baseURL}${link.url}`;
-      linkElement.textContent = link.title;
-
-      listItem.appendChild(linkElement);
-      linksList.appendChild(listItem);
+function displayLinks(data,keys) {
+    keys.forEach(key => {
+        const li = document.createElement("li");
+        li.textContent = key + ": ";
+        data[key].forEach(link => {
+            const a = document.createElement("a");
+            a.setAttribute("href", link.link);
+            a.setAttribute("target", "_blank");
+            a.textContent = link.name + " | ";
+            li.appendChild(a);
+        });
+        ActivitiesElement.appendChild(li);
     });
-
-    weekSection.appendChild(linksList);
-    linksContainer.appendChild(weekSection);
-  });
 }
 
 getLinks();
