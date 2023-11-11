@@ -6,8 +6,6 @@ async function checkWeather() {
   const response = await fetch(apiUrl + `&appid=${apiKey}`);
   var data = await response.json();
 
-  console.log(data);
-
   document.querySelector(".degree").innerHTML = Math.round(data.main.temp) + " °C";
 
   if (data.weather[0].main == "Clouds") {
