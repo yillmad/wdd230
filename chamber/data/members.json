@@ -1,83 +1,83 @@
 {
-    "Companies":[
+    "companies":[
         {
             "name": "Dédalo, arte y artesanía",
-            "adress": "Paseo Saenz Peña 295, Barranco",
+            "address": "Paseo Saenz Peña 295, Barranco",
             "phoneNumbers": "+51 943 735 101",
             "webURL": "https://www.dedalo.pe",
-            "img": "",
+            "img": "directorylogo-dedalo.webp",
             "other": "RUC: 20645731982"
         },
         {
             "name": "Crossover Perú",
-            "adress": "Av. Velasco Astete H-8 APV. Ccapac Yupanqui",
+            "address": "Av. Velasco Astete H-8 APV. Ccapac Yupanqui",
             "phoneNumbers": "+51 980 734 808",
             "webURL": "https://crossoverperu.com.pe",
-            "img": "",
+            "img": "directorylogo-crossover-peru.webp",
             "other": "RUC: 20601018838"
         },
         {
             "name": "Ismael y Laydia",
-            "adress": "Jr. Risso 431 Lince",
+            "address": "Jr. Risso 431 Lince",
             "phoneNumbers": "+51 978 888 558",
             "webURL": "http://www.ismaelylaydia.com",
-            "img": "",
+            "img": "directorylogo-ismael-y-laydia.webp",
             "other": "RUC: 20555574542"
         },
         {
             "name": "Arequipa Tours Perú",
-            "adress": " Calle Álvarez Thomas 107 of.01 Cercado - Centro Histórico",
+            "address": " Calle Álvarez Thomas 107 of.01 Cercado - Centro Histórico",
             "phoneNumbers": "+51 940 187 145",
             "webURL": "https://www.arequipatoursagencia.com/",
-            "img": "",
+            "img": "directorylogo-tours-peru.webp",
             "other": "RUC: 20476319428"
         },
         {
             "name": "Típika",
-            "adress": "Luna Pizarro 407, Vallecito",
+            "address": "Luna Pizarro 407, Vallecito",
             "phoneNumbers": "054 223 964",
             "webURL": "https://tipika.com.pe/",
-            "img": "",
+            "img": "directorylogo-tipika.webp",
             "other": "RUC: 20499873172"
         },
         {
             "name": "Artesanías Perú",
-            "adress": "Calle Uno Oeste Nº050, Córpac",
+            "address": "Calle Uno Oeste Nº050, Córpac",
             "phoneNumbers": "51 513 6100",
             "webURL": "https://www.artesaniasdelperu.gob.pe/",
-            "img": "",
+            "img": "directorylogo-artesanias-del-peru.webp",
             "other": "RUC: 20284779963"
         },
         {
             "name": "Sambambaia's Restaurant - Grill - Pizzería",
-            "adress": "Luna Pizarro 304, Vallecito ",
+            "address": "Luna Pizarro 304, Vallecito ",
             "phoneNumbers": "054 223 657",
             "webURL": "https://sambambaias.com.pe/",
-            "img": "",
+            "img": "directorylogo-sambambaia's.webp",
             "other": "RUC: 20491243123"
         },
         {
             "name": "Destinos Travel",
-            "adress": "Av. España 2350, Of. G-2 2° Nivel C.C. Boulevard",
+            "address": "Av. España 2350, Of. G-2 2° Nivel C.C. Boulevard",
             "phoneNumbers": "+51 948 868 813",
             "webURL": "https://destinostravelperu.com/",
-            "img": "",
+            "img": "directorylogo-destinos-travel.webp",
             "other": "RUC: 20941316871"
         },
         {
             "name": "Ichimay Wari",
-            "adress": " Jr. Argentina Mz 22 Lt 9A Nuevo Lurín Km 39.5 Lurín",
+            "address": " Jr. Argentina Mz 22 Lt 9A Nuevo Lurín Km 39.5 Lurín",
             "phoneNumbers": "+51 987 155 072",
             "webURL": "https://ichimaywari.com/",
-            "img": "",
+            "img": "directorylogo-ichimay-wari.webp",
             "other": "RUC: 20365544781"
         },
         {
             "name": "Zig Zag",
-            "adress": "Calle Zela 210 - 212, Centro Histórico, Arequipa",
+            "address": "Calle Zela 210 - 212, Centro Histórico, Arequipa",
             "phoneNumbers": "054 206020",
             "webURL": "https://zigzagrestaurant.com/",
-            "img": "",
+            "img": "directorylogo-zigzag.webp",
             "other": "RUC: 20698746821"
         }
     ]
