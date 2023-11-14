@@ -503,3 +503,118 @@ button:hover{
     font-size: calc(min(20px + 1vw, 30px));
     margin: 5% 10% 10% 10%;
 }
+
+/* Directory */
+.directory-main-grid{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+/* directory-grid */
+.btn {
+    background-color: var(--secondary-color);
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 10px;
+}
+  
+.btn:hover, 
+.active {
+    background-color: var(--primary-color);
+}
+  
+.directory {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.1fr 1fr;
+    grid-template-areas:
+      "header header"
+      "btn btn";
+    grid-gap: 1rem;
+    padding: 1rem;
+    justify-items: center;
+}
+  
+.directory h1 {
+    grid-area: header;
+    font-size: 2rem;
+    color: var(--font-color)
+}
+  
+.directory-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-gap: 1rem;
+    padding: 1rem;
+    text-align: center;
+    justify-items: center;
+}
+  
+.directory-grid a {
+    color: rgb(0, 217, 255);
+}
+  
+.directory-grid .company-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.273);
+    width: 100%;
+    border-radius: 10%;
+    padding: 1rem;
+    margin: 1rem;
+    max-width: 20rem;
+}
+  
+#companies img {
+    width: 100%;
+    height: auto;
+    border-radius: 10%;
+}
+  
+.company-info {
+    color: white;
+}
+
+/* directory-list */
+.directory-list .company-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0.5rem;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin: 0.5rem;
+    background-color: #fff;
+    color: black;
+    font-size: calc(min(7px + 1vw, 20px));  
+}
+  
+.directory-list h3 {
+    color: black;
+}
+  
+.directory-list #companies .company-card:nth-child(even) {
+    background-color: rgb(221, 221, 221);
+}
+
+.directory-list .company-logo{
+    display: none;
+}
+
+.directory-list .company-card{
+    background-color: transparent;
+}
+
+.directory-list .company-info:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+    box-shadow: 0 0 10px var(--nav-link-color);
+}
+
+.directory-list .company-info .other{
+    display: none;
+}

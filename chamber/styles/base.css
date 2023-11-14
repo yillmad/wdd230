@@ -91,4 +91,18 @@
         flex-direction: column;
     }
 
+    /* Directory */
+
+    .directory-grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(9, 1fr);
+    }
+
+    .directory-list .company-info {
+        font-size: 13px;
+    }
+
+    .directory-list .company-info {
+        flex-direction: column;
+    }
 }
