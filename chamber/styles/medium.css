@@ -79,6 +79,26 @@ nav .navigation{
 #current{
     background-color: var(--primary-color);
 }
+/* banner */
+#banner {
+    background-color: var(--accent1-color);
+    color: var(--accent2-color);
+    z-index: 11;
+    position: sticky;
+    width: 100%;
+    text-align: center;
+    padding: .1rem;
+}
+  
+#banner p {
+    color: white;
+}
+  
+#banner span {
+    font-weight: 700;
+    float: right;
+    margin-right: 1rem;
+  }
 
 /* hero */
 .hero{
@@ -157,54 +177,41 @@ main{
     border-radius: 25px;
 }
 
-.weather-container{
+/* weather */
+
+#weather{
     grid-row: 3/4;
     grid-column: 1/4;
     text-align: center;
-    justify-content: center;
     background-color: var(--weather-background);
     margin: 5px 20% 50px 20%;
     border-radius: 20px;
     color: var(--backgroundc-color);
     text-shadow: 1px 1px 5px #707070;
-}
-.weather-widget{
+    justify-content: space-around;
     display: grid;
-    grid-template-columns: auto auto;
-    grid-template-rows: auto auto;
-}
-.weather-left{
-    grid-column: 1/2;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    font-size: 25px;
-}
-.weather-right{
-    grid-column: 2/3;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    font-size: 40px;
-}
-.degree{
-    font-size: calc(min(10px + 10vw, 70px));
-    margin-top: 40px;
-    margin-bottom: 10px;
-}
-.city, .weather-status{
-    margin: 0;
+    color: var(--accent2-color);
 }
 
-.weather-bottom{
+#current-weather{
     grid-column: 1/3;
-    grid-row: 2/3;
+    justify-content: center;
+    align-items: center;
+    font-size: calc(min(9px + 10vw, 40px));
+    margin-top: 3%;
+}
+
+#forecast{
+    grid-column: 1/3;
+    grid-row: 3/4;
     margin-top: 15px;
     margin-bottom: 15px;
 }
 
+.chill{
+    grid-column: 1/3;
+    grid-row: 2/3;
+}
 /* msg image */
 .msg-img{
     background-color: var(--primary-color);
