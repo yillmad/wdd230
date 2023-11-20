@@ -1,5 +1,6 @@
 const apiKey = "164e55133784eda8dd008adca3141746";
 const apiUrl = "https://api.openweathermap.org/data/2.5/weather?q=Arequipa&units=metric";
+const weatherIcon = document.querySelector(".weather-icon");
 const weatherStatus = document.querySelector(".weather-status");
 
 async function checkWeather() {
@@ -7,6 +8,10 @@ async function checkWeather() {
   var data = await response.json();
 
   document.querySelector(".degree").innerHTML = Math.round(data.main.temp) + " °C";
+
+  const iconCode = data.weather[0].icon;
+  const iconSrc = `https://openweathermap.org/img/w/${iconCode}.png`;
+  weatherIcon.src = iconSrc;
 
   if (data.weather[0].main == "Clouds") {
     weatherStatus.innerHTML = "Cloudy";

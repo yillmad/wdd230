@@ -205,6 +205,24 @@ ul li::marker{
     display: none;
 }
 
+/* weather */
+.card-information {
+    background-color: #f0e4b1; 
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    text-align: center;
+}
+#city-information{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
 /* Standar size */
 
