@@ -34,9 +34,13 @@ fetch('data/members.json')
   gridbutton.addEventListener("click",() => {
     display.classList.add("directory-grid");
     display.classList.remove("directory-list");
+    gridbutton.classList.add("active");
+  listbutton.classList.remove("active"); 
   });
 
   listbutton.addEventListener("click",() => {
     display.classList.add("directory-list");
     display.classList.remove("directory-grid");
+    listbutton.classList.add("active");
+  gridbutton.classList.remove("active");
   });

@@ -504,13 +504,16 @@ button:hover{
     margin: 5% 10% 10% 10%;
 }
 
+
 /* Directory */
 .directory-main-grid{
     display: grid;
     grid-template-columns: 1fr;
 }
+
 /* directory-grid */
-.btn {
+
+#listBtn,#gridBtn {
     background-color: var(--secondary-color);
     border: none;
     border-radius: 10px;
@@ -518,8 +521,7 @@ button:hover{
     padding: 10px;
 }
   
-.btn:hover, 
-.active {
+#listBtn:hover, #gridBtn:hover, .active {
     background-color: var(--primary-color);
 }
   
@@ -552,7 +554,7 @@ button:hover{
 }
   
 .directory-grid a {
-    color: rgb(0, 217, 255);
+    color: var(--primary-color);
 }
   
 .directory-grid .company-card {
@@ -560,7 +562,7 @@ button:hover{
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    background-color: rgba(0, 0, 0, 0.273);
+    background-color:var(--weather-background);
     width: 100%;
     border-radius: 10%;
     padding: 1rem;
@@ -577,6 +579,7 @@ button:hover{
 .company-info {
     color: white;
 }
+
 
 /* directory-list */
 .directory-list .company-info {
