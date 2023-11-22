@@ -1,4 +1,4 @@
-@media screen and (max-width: 940px) {
+@media screen and (max-width: 840px) {
     nav .navigation {
         display: none;
     }
@@ -32,6 +32,9 @@
         display: block;
     }
 
+    .msg ul li p{
+        display: none;
+    }
 
     footer {
         margin-top: 25px;
