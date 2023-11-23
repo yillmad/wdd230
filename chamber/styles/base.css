@@ -3,9 +3,6 @@
         display: none;
     }
 
-    footer {
-        flex-direction: column;
-    }
     .hero-message {
         margin-top: 0;
     }
@@ -23,9 +20,9 @@
     }
 
 
-    .card1, .card2, .card3, .weather-container{ 
-        margin: 50px auto;
-        width: 60%;
+    .card1, .card2, .card3, #weather{ 
+        margin: 0 auto;
+        width: 80%;
     }
 
     .msg-img {
@@ -38,6 +35,8 @@
 
     footer {
         margin-top: 25px;
+        text-align: center;
+        flex-direction: column;
     }
     .social-media>a>img, footer>a{
         margin-top: 15px;
@@ -76,7 +75,7 @@
     }
 
     /* weather box */
-    .weather-widget{
+    .chill, #current-weather tbody tr, #forecast tbody tr{
         display: flex;
         flex-direction: column;
     }
@@ -86,12 +85,51 @@
     .weather-icon{
         width: 70%;
     }
+    #current-weather tbody tr{
+        margin-top: 25px;
+        margin-bottom: 25px;
+    }
+    #forecast{
+        margin-top: 25px;
+        margin-bottom: 25px;
+    }
+    #weather{
+        margin-bottom: 2.5rem;
+    }
 
     /* form and table */
 
     #grid-form{
         display: flex;
         flex-direction: column;
+    }
+
+    fieldset p{
+        position: relative;
+        left: 2px;
+        top: 2px;
+    }
+
+    form fieldset, form button{
+        width: 70%;
+    }
+
+    form fieldset{
+        margin-left: 1%;
+    }
+
+    /* discover */
+
+    #sidebar-grid {
+        display: flex;
+        flex-direction: column;
+    }
+    #sidebar {
+        position: relative;
+        margin: 0 auto;
+    }
+    #detailed-events{
+        margin: 0 auto;
     }
 
     /* Directory */
