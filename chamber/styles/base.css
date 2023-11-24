@@ -1,4 +1,4 @@
-@media screen and (max-width: 840px) {
+@media screen and (max-width: 640px) {
     nav .navigation {
         display: none;
     }
@@ -137,6 +137,10 @@
     .directory-grid {
         grid-template-columns: 1fr;
         grid-template-rows: repeat(9, 1fr);
+    }
+
+    .directory-grid .company-card {
+        width: 80%;
     }
 
     .directory-list .company-info {

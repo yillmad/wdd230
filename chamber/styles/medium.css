@@ -527,6 +527,7 @@ option{
 .directory-main-grid{
     display: grid;
     grid-template-columns: 1fr;
+    width: auto;
 }
 
 /* directory-grid */
@@ -581,14 +582,14 @@ option{
     justify-content: space-between;
     align-items: center;
     background-color:var(--weather-background);
-    width: 100%;
+    width: 90%;
     border-radius: 10%;
     padding: 1rem;
     margin: 1rem;
     max-width: 20rem;
 }
   
-#companies img {
+.company-logo img {
     width: 100%;
     height: auto;
     border-radius: 10%;
@@ -597,7 +598,6 @@ option{
 .company-info {
     color: white;
 }
-
 
 /* directory-list */
 .directory-list .company-info {
@@ -611,7 +611,7 @@ option{
     margin: 0.5rem;
     background-color: #fff;
     color: black;
-    font-size: calc(min(7px + 1vw, 20px));  
+    font-size: calc(min(9px + 1vw, 20px));  
 }
   
 .directory-list h3 {
