@@ -284,6 +284,7 @@ footer {
 footer a{
     color: var(--accent2-color);
     text-decoration: none;
+    text-align: center;
 }
 footer a:hover{
     color: var(--accent1-color);
