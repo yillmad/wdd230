@@ -389,7 +389,6 @@ form label.sbs {
 /* join form  */
 form{
     margin: auto;
-    min-width: 500px;
 }
 
 #grid-form{
@@ -404,6 +403,7 @@ form fieldset {
     border: 1px solid var(--form-color);
     border-radius: 10px;
     padding: .5rem 2%;
+    padding-right: 20%;
 }
 
 fieldset p{
