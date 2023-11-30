@@ -1,0 +1,153 @@
+@media screen and (max-width: 640px) {
+    nav .navigation {
+        display: none;
+    }
+
+    .hero-message {
+        margin-top: 0;
+    }
+    .hero-message > p {
+        display: none;
+    }
+    
+
+    .home-grid {
+        display: block;
+        height: auto;
+    }
+    .home-title {
+        font-size: 25px;
+    }
+
+
+    .card1, .card2, .card3, #weather{ 
+        margin: 0 auto;
+        width: 80%;
+    }
+
+    .msg-img {
+        display: block;
+    }
+
+    .msg ul li p{
+        display: none;
+    }
+
+    footer {
+        margin-top: 25px;
+        text-align: center;
+        flex-direction: column;
+    }
+    .social-media>a>img, footer>a{
+        margin-top: 15px;
+    }
+
+    /* menu */
+    header{
+        grid-template-columns: 200px 1fr;
+        padding: 1rem;
+    }
+    #menu.open::before {
+        content: "X";
+    }
+
+
+    nav .open{
+        display: block;
+        width: 100%;
+    }
+    .open li a {
+        display: block;
+    }
+    #menu {
+        display: block;
+        font-size: 2rem;
+        border: 1px solid rgba(0,0,0,.3);
+        background-color: #eee;
+        color: #000;
+        border-radius: 5px;
+    }
+    #menu::before {
+	content: "☰";
+    }
+    .open{
+        padding: 0;
+    }
+
+    /* weather box */
+    .chill, #current-weather tbody tr, #forecast tbody tr{
+        display: flex;
+        flex-direction: column;
+    }
+    .degree{
+        margin: 0;
+    }
+    .weather-icon{
+        width: 70%;
+    }
+    #current-weather tbody tr{
+        margin-top: 25px;
+        margin-bottom: 25px;
+    }
+    #forecast{
+        margin-top: 25px;
+        margin-bottom: 25px;
+    }
+    #weather{
+        margin-bottom: 2.5rem;
+    }
+
+    /* form and table */
+
+    #grid-form{
+        display: flex;
+        flex-direction: column;
+    }
+
+    fieldset p{
+        position: relative;
+        left: 2px;
+        top: 2px;
+    }
+
+    form fieldset, form button{
+        width: 70%;
+    }
+
+    form fieldset{
+        margin-left: 1%;
+    }
+
+    /* discover */
+
+    #sidebar-grid {
+        display: flex;
+        flex-direction: column;
+    }
+    #sidebar {
+        position: relative;
+        margin: 0 auto;
+    }
+    #detailed-events{
+        margin: 0 auto;
+    }
+
+    /* Directory */
+
+    .directory-grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(9, 1fr);
+    }
+
+    .directory-grid .company-card {
+        width: 80%;
+    }
+
+    .directory-list .company-info {
+        font-size: 13px;
+    }
+
+    .directory-list .company-info {
+        flex-direction: column;
+    }
+}
