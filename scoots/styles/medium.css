@@ -10,9 +10,8 @@ body{
     --accent1-color: #8AABCA;
     --accent2-color: #FFFFFF;
     --background-color: #F2F1EC;
-    --font-color: #000000;
+    --black-white: #000000;
     --hero-box-background: rgba(255, 255, 255, 0.8);
-    --read-more: #000000;
     --weather-background: rgba(0, 0, 0, 0.4);
     --form-boxes: rgba(0, 0, 0, 0.1);
     --input: #555;
@@ -38,9 +37,8 @@ body{
     --accent1-color: #343a40;
     --accent2-color: #FFFFFF;
     --background-color: #343a40;
-    --font-color: #FFFFFF;
+    --black-white: #FFFFFF;
     --hero-box-background: rgba(0,0,0,0.8);
-    --read-more: #FFFFFF;
     --weather-background: rgba(299, 299, 299, 0.4);
     --form-color: #FFFF;
     --input: #FFFF;
@@ -62,29 +60,89 @@ header{
     justify-self: center;
 }
 
-
-nav .navigation{
+.navigation {
     display: flex;
-    flex-grow: 1;
+    flex-direction: row;
+    list-style: none;
     margin: 0;
 }
-.navigation li{
-    flex-grow: 1;
+.navigation li a {
+    display: block;
+    padding: 25px 1rem 25px 1rem;
     text-align: center;
-    list-style: none;
-    padding: 25px;
-}
-.navigation li:hover{
-    background-color: var(--accent1-color);
-}
-.navigation a{
     text-decoration: none;
     color: var(--accent2-color);
+}
+.navigation li a:hover {
+    background-color: var(--primary-color);
+    color: var(--accent2-color);
+    font-weight: 700;
+}
+nav ul li{
+    flex: 1 1 100%;
 }
 #current{
     background-color: var(--primary-color);
 }
+#current a{
+    color: black;
+    font-weight: 700
+}
+
 /* banner */
+
+.slider{
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+.slides{
+    width: 500%;
+    height: auto;
+    display: flex;
+}
+.slides input{
+    display: none;
+}
+.slide{
+    width: 20%;
+    transition: 2s;
+    height: auto;
+}
+.slide img{
+    width: 100%;
+    height: auto;
+    max-height: auto;
+}
+
+.navigation-manual{
+    position: absolute;
+    width: 100%;
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+}
+.manual-btn{
+    border: 2px solid black;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+.manual-btn:not(:last-child){
+    margin-right: 40px;
+}
+.manual-btn:hover{
+    background-color: black;
+}
+#radio1:checked ~ .first{
+    margin-left: 0;
+}
+#radio2:checked ~ .first{
+    margin-left: -20%;
+}
+
+
 #banner {
     background-color: var(--accent1-color);
     color: var(--accent2-color);
@@ -133,7 +191,7 @@ nav .navigation{
     padding: 1rem;
     align-items: center;
     font-size: calc(min(8px + 1vw, 23px));
-    color: var(--font-color);
+    color: var(--black-white);
 }
 .hero-message>p{
     margin-top: 0;
@@ -143,7 +201,7 @@ nav .navigation{
 main{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    color: var(--font-color);
+    color: var(--black-white);
 }
 
 .subtitle{
@@ -246,10 +304,10 @@ ul>li>p, ul>li>h3, .msg>h2{
     margin-top: 0;
     margin-bottom: 0;
 }
-.read-more{
-    color:var(--read-more);
+.black-white{
+    color:var(--black-white);
 }
-.read-more:hover{
+.black-white:hover{
     color: var(--accent2-color);
 }
 .msg .boton{
@@ -320,7 +378,7 @@ a>img {
 
 #sidebar {
     grid-area: sidebar1;
-    color: var(--font-color);
+    color: var(--black-white);
     padding: 2rem;
     margin: 2rem;
     border-radius: 10px;
@@ -334,7 +392,7 @@ a>img {
 
 #detailed-events {
     grid-area: main;
-    color: var(--font-color);
+    color: var(--black-white);
     padding-top: 2rem;
     margin-top: 2rem;
     margin-bottom: 2rem;
@@ -423,7 +481,7 @@ form legend {
 label{
     display: block;
     padding-top: 1rem;
-    color: var(--font-color);
+    color: var(--black-white);
     font-size: calc(min(10px + 1vw, 18px));
 }
 
@@ -473,7 +531,7 @@ option{
 }
   
 .memberLevels h3 {
-    color: var(--font-color);
+    color: var(--black-white);
 }
   
 .memberLevels table {
@@ -481,7 +539,7 @@ option{
     width: 100%;
     font-size: 0.8rem;
     text-align: left;
-    color: var(--font-color);
+    color: var(--black-white);
 }
   
 .memberLevels th,
@@ -560,7 +618,7 @@ option{
 .directory h1 {
     grid-area: header;
     font-size: 2rem;
-    color: var(--font-color)
+    color: var(--black-white)
 }
   
 .directory-grid {

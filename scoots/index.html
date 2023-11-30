@@ -29,31 +29,51 @@
         <nav>
             <button id="menu"></button>
             <ul class="navigation">
-                <li id="current"><a href="https://yillmad.github.io/wdd230/chamber">Home</a></li>
-                <li><a href="https://yillmad.github.io/wdd230/chamber/discover">Discover</a></li>
-                <li><a href="https://yillmad.github.io/wdd230/chamber/join">Join</a></li>
-                <li><a href="https://yillmad.github.io/wdd230/chamber/directory">Directory</a></li>
+                <li id="current"><a href="#">Home</a></li>
+                <li><a href="#">Rentals</a></li>
+                <li><a href="#">Reservations</a></li>
+                <li><a href="#">Tours</a></li>
+                <li><a href="#">Contact Us</a></li>
             </ul>
         </nav>
     </header>
 
-    <div class="hero">
-        <div class="hero-box">
+    <div class="slider">
+        <div class="slides">
             <input type="radio" name="radio-btn" id="radio1">
             <input type="radio" name="radio-btn" id="radio2">
-            <div>
-                <picture class="hero-img">
+            <div class="slide first">
+                <picture>
                     <source srcset="images/hero-small.webp" media="(max-width: 500px)">
                     <source srcset="images/hero-med.webp" media="(max-width: 1000px)">
                     <img src="images/hero-large.webp" alt="hero-img" width="1280" height="491">
                 </picture>
             </div>
+            <div class="slide">
+                <picture>
+                    <source srcset="images/hero-2-small.webp" media="(max-width: 500px)">
+                    <source srcset="images/hero-2-med.webp" media="(max-width: 1000px)">
+                    <img src="images/hero-2-large.webp" alt="hero-img" width="1280" height="491">
+                </picture>
+            </div>
+
+            <!-- auto-navigation -->
+            <div class="navigation-auto">
+                <div class="auto-btn1"></div>
+                <div class="auto-btn2"></div>
+            </div>
         </div>
+        <!-- manual navigation start -->
+        <div class="navigation-manual">
+            <label for="radio1" class="manual-btn"></label>
+            <label for="radio2" class="manual-btn"></label>
+        </div>
+
         <div class="dark-mode-button">
             <img id="dark-icon" src="images/moon.webp" alt="theme icon">
         </div>
         <div class="button-box">
-            <a class="boton" href="https://yillmad.github.io/wdd230/chamber/join">Join Us</a>
+            <a class="boton" href="#">Join Us</a>
         </div>
     </div>
 
