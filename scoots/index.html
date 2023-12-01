@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="styles/medium.css">
     <link rel="stylesheet" href="styles/larger.css">
     <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/swiper.css">
     <!-- favicon.ico -->
     <link rel="icon" href="images/scoots.ico">
     <!-- Open Graph Meta Properties -->
@@ -32,7 +33,6 @@
                 <li id="current"><a href="#">Home</a></li>
                 <li><a href="#">Rentals</a></li>
                 <li><a href="#">Reservations</a></li>
-                <li><a href="#">Tours</a></li>
                 <li><a href="#">Contact Us</a></li>
             </ul>
         </nav>
@@ -40,9 +40,11 @@
 
     <div class="slider">
         <div class="slides">
+
             <input type="radio" name="radio-btn" id="radio1">
             <input type="radio" name="radio-btn" id="radio2">
             <div class="slide first">
+
                 <picture>
                     <source srcset="images/hero-small.webp" media="(max-width: 500px)">
                     <source srcset="images/hero-med.webp" media="(max-width: 1000px)">
@@ -77,35 +79,31 @@
         </div>
     </div>
 
-    <main class="home-grid">
-        
-        <div class="subtitle">
-            <h2>Company's Spothlights:</h2>
-        </div>
-        <section class="card1">
-            <img class="img-card" src="images/spolight-cusco.jpg" alt="Cusco's picture">
-            <h2>Colca's Adventures - <i>Discover Arequipa's Hidden Treasures</i></h2>
-            <p>Colca's Adventures is your gateway to unforgettable Arequipa's adventures. As a leading tour operator, 
-                we specialize in crafting unique experiences that showcase the natural beauty, rich culture, 
-                and historical wonders of "The white city". From trekking the Inca Trail to exploring the Amazon Colca Canion, 
-                our expert guides will lead you on an unforgettable journey. Join us and immerse yourself in 
-                the magic of Arequipa.</p>  
-        </section>
-        <section class="card2">
-            <img class="img-card" src="images/spolight-artisans.jpg" alt="IncaCrafts Picture">
-            <h2>IncaCrafts Emporium - <i>Authentic Arquipa Artisans</i></h2>
-            <p>At IncaCrafts Emporium, we celebrate Arequipa's vibrant culture through exquisite handmade crafts. 
-                Our artisans create unique pieces that reflect the traditions and heritage of the city. From colorful 
-                textiles and pottery to intricate jewelry, every item tells a story. Explore our online store 
-                and bring a piece of Arequipa's artistic heritage into your life.</p>
-        </section>
-        <section class="card3">
-            <img class="img-card" src="images/spolight-arequipa-gourmet.jpg" alt="Gourmet Picture">
-            <h2>Arequipa Gourmet Tours - <i>Savor the Flavors of Arequipa</i></h2>
-            <p>Arequipa Gourmet Tours invites you to embark on a culinary adventure through Peru's gastronomic paradise. 
-                Discover the secrets of Peruvian cuisine as you taste your way through Lima's top restaurants, 
-                food markets, and street vendors. Our guided food tours offer an authentic and delicious immersion 
-                into Peru's culinary world.</p>
+    <main class="home-main">
+        <section>
+            <div class="scooters-slide-container">
+                <div class="scooters-slide-content">
+                    <div class="scooter-card-wrapper">
+                        <div class="scooter-card">
+                            <div class="scooter-image-content">
+                                <span class="overlay"></span>
+
+                                <div class="scooter-card-image">
+                                    <img class="scooter-card-img" src="images/rental-types/scooter-honda-metropolitan.webp" alt="scooter honda metropolitan">
+                                </div>
+                            </div>
+
+                            <div class="scooter-card-content">
+                                <h2 class="scooter-name">Honda Metropolitan</h2>
+                                <p class="scooter-description">Ensgine Size: 49cc</p>
+                                <p class="scooter-description">Capacity: 1</p>
+
+                                <button class="scooter-button">View More</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
 
         <div id="weather">
@@ -113,15 +111,6 @@
                 Wind Chill <span class="wind-chill">21 °C</span>
             </div>
         </div>
-
-
-        <div class="meetup-banner" style="display: none;">
-            <div class="banner-content">
-              <p>Join us for the Chamber of Commerce meet and greet on Wednesday at 7:00 p.m.</p>
-              <button class="close-banner">Close</button>
-            </div>
-          </div>
-        
 
         <section class="msg-img">
             <div class="last-img">
@@ -156,7 +145,7 @@
                         </p>
                     </li>
                 </ul>
-                <a class="boton" href="https://yillmad.github.io/wdd230/chamber/join">Join Us</a>
+                <a class="boton" href="#">Join Us</a>
             </div>
         </section>
 
@@ -191,6 +180,7 @@
 <script src="scripts/weather.js"></script>
 <script src="scripts/banner.js"></script>
 <script src="scripts/dates.js"></script>
+<script src="scripts/swiper.js"></script>
 
 </body>
 </html>
