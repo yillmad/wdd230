@@ -3,30 +3,19 @@
         display: none;
     }
 
-    .hero-message {
-        margin-top: 0;
-    }
-    .hero-message > p {
-        display: none;
+    .button-box{
+        display: block;
+        position: relative;
+        left: auto;
+        right: auto;
     }
     
-
     .home-grid {
         display: block;
         height: auto;
     }
     .home-title {
         font-size: 25px;
-    }
-
-
-    .card1, .card2, .card3, #weather{ 
-        margin: 0 auto;
-        width: 80%;
-    }
-
-    .msg-img {
-        display: block;
     }
 
     .msg ul li p{
