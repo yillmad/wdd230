@@ -1,5 +1,5 @@
 const baseURL = "https://yillmad.github.io/wdd230/";
-const rentalTypesURL = "https://yillmad.github.io/wdd230/scoots/data/data.json";
+const rentalTypesURL = "https://yillmad.github.io/wdd230/scoots/data/rentals.json";
 
 async function getRentalTypes() {
   try {
@@ -19,6 +19,9 @@ function displayRentalTypes(rentalTypes) {
     slide.classList.add('swiper-slide');
 
     const content = `
+      <div>
+        <p>${rental.image}</p>
+      </div>
       <div>
         <p>${rental.type}</p>
       </div>
