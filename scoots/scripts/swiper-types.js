@@ -1,5 +1,5 @@
 const baseURL = "https://yillmad.github.io/wdd230/";
-const rentalTypesURL = "https://yillmad.github.io/wdd230/data/links.json"; // Replace with your rental types JSON URL
+const rentalTypesURL = "https://yillmad.github.io/wdd230/scoots/data/data.json";
 
 async function getRentalTypes() {
   try {
