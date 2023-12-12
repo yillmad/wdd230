@@ -1,0 +1,126 @@
+{
+    "rentalTypes":[
+        {
+            "type": "Honda Metro Scooter",
+            "maxPersons": 1,
+            "Prices":[
+                {
+                    "Reservation":[
+                        {
+                            "halfDayPrice": 20,
+                            "fullDayPrice": 30
+                        }
+                    ],
+                    "WalkIn":[
+                        {
+                            "halfDayPrice": 25,
+                            "fullDayPrice": 35
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "Honda Dio Scooter",
+            "maxPersons": 2,
+            "Prices":[
+                {
+                    "Reservation":[
+                        {
+                            "halfDayPrice": 30,
+                            "fullDayPrice": 40
+                        }
+                    ],
+                    "WalkIn":[
+                        {
+                            "halfDayPrice": 35,
+                            "fullDayPrice": 45
+                        }
+                    ]
+                }
+            ]
+
+        },
+        {
+            "type": "Honda PCX150 Scooter",
+            "maxPersons": 2,
+            "Prices":[
+                {
+                    "Reservation":[
+                        {
+                            "halfDayPrice": 40,
+                            "fullDayPrice": 50
+                        }
+                    ],
+                    "WalkIn":[
+                        {
+                            "halfDayPrice": 45,
+                            "fullDayPrice": 55
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "Honda Pioneer ATV",
+            "maxPersons": 4,
+            "Prices":[
+                {
+                    "Reservation":[
+                        {
+                            "halfDayPrice": 50,
+                            "fullDayPrice": 70
+                        }
+                    ],
+                    "WalkIn":[
+                        {
+                            "halfDayPrice": 60,
+                            "fullDayPrice": 80
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "Jeep Wrangler - 4 door with a/c",
+            "maxPersons": 5,
+            "Prices":[
+                {
+                    "Reservation":[
+                        {
+                            "halfDayPrice": 70,
+                            "fullDayPrice": 100
+                        }
+                    ],
+                    "WalkIn":[
+                        {
+                            "halfDayPrice": 85,
+                            "fullDayPrice": 125
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "Jeep Wrangler - 2 door",
+            "maxPersons": 4,
+            "Prices":[
+                {
+                    "Reservation":[
+                        {
+                            "halfDayPrice": 60,
+                            "fullDayPrice": 85
+                        }
+                    ],
+                    "WalkIn":[
+                        {
+                            "halfDayPrice": 70,
+                            "fullDayPrice": 90
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+
+}

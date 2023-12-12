@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="styles/medium.css">
     <link rel="stylesheet" href="styles/larger.css">
     <link rel="stylesheet" href="styles/base.css">
-    <link rel="stylesheet" href="styles/swiper.css">
+    <link rel="stylesheet" href="styles/swiper-bundle.min.css">
     <!-- favicon.ico -->
     <link rel="icon" href="images/scoots.ico">
     <!-- Open Graph Meta Properties -->
@@ -75,36 +75,41 @@
             <img id="dark-icon" src="images/moon.webp" alt="theme icon">
         </div>
         <div class="button-box">
-            <a class="boton" href="#">Join Us</a>
+            <a class="boton" href="#">Make a Reservation</a>
         </div>
     </div>
 
     <main class="home-main">
+
         <section>
-            <div class="scooters-slide-container">
-                <div class="scooters-slide-content">
-                    <div class="scooter-card-wrapper">
-                        <div class="scooter-card">
-                            <div class="scooter-image-content">
-                                <span class="overlay"></span>
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
 
-                                <div class="scooter-card-image">
-                                    <img class="scooter-card-img" src="images/rental-types/scooter-honda-metropolitan.webp" alt="scooter honda metropolitan">
-                                </div>
-                            </div>
+        <div class="swiper-slide">
+          <div>
+            <img src="scoots/images/rental-types/jeep-2d-wrangler.webp" alt="">
+          </div>
+          <div>
+            <p>Moto</p>
+          </div>
+          <div>
+            <p>Engine Size: 49cc</p>
+            <p>Capacity: 1</p>
+          </div>
+        </div>
 
-                            <div class="scooter-card-content">
-                                <h2 class="scooter-name">Honda Metropolitan</h2>
-                                <p class="scooter-description">Ensgine Size: 49cc</p>
-                                <p class="scooter-description">Capacity: 1</p>
-
-                                <button class="scooter-button">View More</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+        <div class="swiper-slide">Slide 2</div>
+        <div class="swiper-slide">Moto mami</div>
+        <div class="swiper-slide">Slide 4</div>
+        <div class="swiper-slide">Slide 5</div>
+        <div class="swiper-slide">Slide 6</div>
+        <div class="swiper-slide">Slide 7</div>
+        <div class="swiper-slide">Slide 8</div>
+        <div class="swiper-slide">Slide 9</div>
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+  </section>
 
         <div id="weather">
             <div class="chill">
@@ -114,7 +119,7 @@
 
         <section class="msg-img">
             <div class="last-img">
-                <img src="images/4-3-msg-img-medium.jpg" alt="Peruvian Kids">
+                <img src="" alt="Peruvian Kids">
             </div>               
             <div class="msg">
                 <h2>Current Events</h2>
@@ -177,10 +182,11 @@
 <!-- scripts -->
 <script src="scripts/hambutton.js"></script>
 <script src="scripts/darkmode.js"></script>
-<script src="scripts/weather.js"></script>
-<script src="scripts/banner.js"></script>
-<script src="scripts/dates.js"></script>
-<script src="scripts/swiper.js"></script>
+<script src="scripts/swiper-bundle.min.js"></script>
+<script src="scripts/swipe.js"></script>
+<script src="scripts/swiper-types.js"></script>
+<!-- <script src="scripts/weather.js"></script> -->
+<!-- <script src="scripts/dates.js"></script> -->
 
 </body>
 </html>
