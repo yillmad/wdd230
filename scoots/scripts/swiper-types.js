@@ -19,8 +19,8 @@ function displayRentalTypes(rentalTypes) {
     slide.classList.add('swiper-slide');
 
     const content = `
-      <div>
-        <p>${rental.image}</p>
+      <div class="scooter-img">
+        <img src="images/rental-types/${rental.image}" alt="scooter image">
       </div>
       <div>
         <p>${rental.type}</p>
@@ -33,8 +33,6 @@ function displayRentalTypes(rentalTypes) {
     slide.innerHTML = content;
     swiperWrapper.appendChild(slide);
   });
-
-  // Initialize your Swiper here (assuming you have the necessary swiper initialization code)
 }
 
 getRentalTypes();

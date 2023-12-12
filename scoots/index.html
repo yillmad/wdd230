@@ -23,6 +23,11 @@
 </head>
 <body>
 
+    <div id="temperature-message" class="temperature-message">
+        <button id="close-btn">&times;</button>
+        <span id="temp-max"></span>
+    </div>
+
     <header>
         <a class="logo" href="index.html">
             <img src="images/logo-scoots.webp" alt="Chamber Siye Logo" width="60">
@@ -45,14 +50,14 @@
             <input type="radio" name="radio-btn" id="radio2">
             <div class="slide first">
 
-                <picture>
+                <picture id="hero1" >
                     <source srcset="images/hero-small.webp" media="(max-width: 500px)">
                     <source srcset="images/hero-med.webp" media="(max-width: 1000px)">
                     <img src="images/hero-large.webp" alt="hero-img" width="1280" height="491">
                 </picture>
             </div>
             <div class="slide">
-                <picture>
+                <picture id="hero2">
                     <source srcset="images/hero-2-small.webp" media="(max-width: 500px)">
                     <source srcset="images/hero-2-med.webp" media="(max-width: 1000px)">
                     <img src="images/hero-2-large.webp" alt="hero-img" width="1280" height="491">
@@ -82,33 +87,32 @@
     <main class="home-main">
 
         <section>
-    <div class="swiper mySwiper">
-      <div class="swiper-wrapper">
-
-        <!-- <div class="swiper-slide">
-          <div>
-            <img src="scoots/images/rental-types/jeep-2d-wrangler.webp" alt="">
-          </div>
-          <div>
-            <p>Moto</p>
-          </div>
-          <div>
-            <p>Engine Size: 49cc</p>
-            <p>Capacity: 1</p>
-          </div>
-        </div>
-        <div class="swiper-slide">Slide 2</div>
-        <div class="swiper-slide">Moto mami</div>
-        <div class="swiper-slide">Slide 4</div>
-        <div class="swiper-slide">Slide 5</div>
-        <div class="swiper-slide">Slide 6</div>
-        <div class="swiper-slide">Slide 7</div>
-        <div class="swiper-slide">Slide 8</div>
-        <div class="swiper-slide">Slide 9</div> -->
-      </div>
-      <div class="swiper-pagination"></div>
-    </div>
-  </section>
+            <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <!-- <div class="swiper-slide">
+                <div>
+                    <img src="scoots/images/rental-types/jeep-2d-wrangler.webp" alt="">
+                </div>
+                <div>
+                    <p>Moto</p>
+                </div>
+                <div>
+                    <p>Engine Size: 49cc</p>
+                    <p>Capacity: 1</p>
+                </div>
+                </div>
+                <div class="swiper-slide">Slide 2</div>
+                <div class="swiper-slide">Moto mami</div>
+                <div class="swiper-slide">Slide 4</div>
+                <div class="swiper-slide">Slide 5</div>
+                <div class="swiper-slide">Slide 6</div>
+                <div class="swiper-slide">Slide 7</div>
+                <div class="swiper-slide">Slide 8</div>
+                <div class="swiper-slide">Slide 9</div> -->
+            </div>
+            <div class="swiper-pagination"></div>
+            </div>
+        </section>
 
         <div id="weather">
             <div class="chill">
@@ -116,42 +120,6 @@
             </div>
         </div>
 
-        <section class="msg-img">
-            <div class="last-img">
-                <img src="" alt="Peruvian Kids">
-            </div>               
-            <div class="msg">
-                <h2>Current Events</h2>
-                <ul>
-                    <li>
-                        <h3>New Travel Regulations for Volcanos Visitors</h3>
-                        <p>Stay up-to-date with the latest regulations and entry requirements for visiting the iconic 
-                            volcanos from the city. │ 
-                            <a class=read-more href="#"><b>Read More</b></a>
-                        </p>
-                    </li>
-                    <li>
-                        <h3>Peru Welcomes International Travelers</h3>
-                        <p>Learn about Peru's reopening to international tourists and the safety measures in place. │ 
-                            <a class=read-more href="#"><b>Read More</b></a>
-                        </p>
-                    </li>
-                    <li>
-                        <h3>Exploring the Colca: Eco-Tourism on the Rise</h3>
-                        <p>Discover the growing trend of eco-tourism in the Peruvian canions and how you can be a part of it. │ 
-                            <a class=read-more href="#"><b>Read More</b></a>
-                        </p>
-                    </li>
-                    <li>
-                        <h3>Festival Season in Chivay: What You Need to Know</h3>
-                        <p>Find out about the upcoming festivals and cultural events in Chivay and how to experience them. │ 
-                            <a class=read-more href="#"><b>Read More</b></a>
-                        </p>
-                    </li>
-                </ul>
-                <a class="boton" href="#">Join Us</a>
-            </div>
-        </section>
 
     </main>
 
@@ -184,7 +152,7 @@
 <script src="scripts/swiper-bundle.min.js"></script>
 <script src="scripts/swipe.js"></script>
 <script src="scripts/swiper-types.js"></script>
-<!-- <script src="scripts/weather.js"></script> -->
+<script src="scripts/weather.js"></script>
 <!-- <script src="scripts/dates.js"></script> -->
 
 </body>
