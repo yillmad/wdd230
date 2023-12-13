@@ -99,7 +99,7 @@ function createRentalTable(data) {
 }
 
 // Get the container where you want to append the table
-const container = document.querySelector('.home-main'); // Change this selector to match your HTML structure
+const container = document.querySelector('.rentals-main');
 
 // Fetch the rental types data and create the table
 fetch(rentalTypesURL)

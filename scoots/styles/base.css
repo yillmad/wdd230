@@ -129,7 +129,7 @@
         width: 80%;
     }
 
-    
+
     /* Rentals */
 
     table {
@@ -144,10 +144,8 @@
     /* Adjust table data cells for better readability */
     td {
       display: block;
-      text-align: left;
       border: none;
       position: relative;
-      padding-left: 50%; /* Create space for data labels */
     }
   
     /* Style for data labels in small screens */
@@ -161,7 +159,7 @@
   
     /* Style for images inside table cells on small screens */
     td img {
-      max-width: 80px;
+      max-width: 300px;
       height: auto;
       display: block;
       margin: 0 auto;

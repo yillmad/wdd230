@@ -19,6 +19,8 @@ body{
     --form-option-color: rgba(0, 0, 0, 0.1);
     --black: #000000;
     --white: #FFFFFF;
+    --table-header: #f2f2f2;
+    --table-even: #f9f9f9;
 }
 
 /* dark mode */
@@ -45,6 +47,8 @@ body{
     --form-color: #FFFFFF;
     --input: #FFFFFF;
     --form-option-color: rgba(0, 0, 0, 0.9);
+    --table-header: #000000;
+    --table-even: #18191b;
 }
 /* highest temperature */
 
@@ -579,40 +583,49 @@ option{
 /* Reservations */
 
 /* Style for the table */
+
+.rentals-main{
+    display: flex;
+    justify-content: center;
+}
+
 table {
-    width: 100%;
     border-collapse: collapse;
-    margin-top: 20px;
-  }
+    margin-top: 30px;
+    margin-bottom: 30px;
+    color: var(--black-white);
+}
   
   /* Style for table header cells */
-  th {
-    background-color: #f2f2f2;
+th {
+    background-color: var(--secondary-color);
     font-weight: bold;
     text-align: left;
     padding: 8px;
-  }
+    text-align: center;
+    color: var(--white);
+}
   
   /* Alternate row color for better readability */
-  tr:nth-child(even) {
-    background-color: #f9f9f9;
-  }
+tr:nth-child(even) {
+    background-color: var(--table-even);
+}
   
   /* Style for table data cells */
-  td {
-    border: 1px solid #dddddd;
+td {
+    border: 1px solid var(--white);
     text-align: left;
     padding: 8px;
-  }
+    text-align: center;
+}
   
   /* Style for images inside table cells */
-  td img {
-    max-width: 100px;
+td img {
+    max-width: 200px;
     height: auto;
     display: block;
     margin: 0 auto;
-  }
-  
+}
 
 /* Reservations */
 
