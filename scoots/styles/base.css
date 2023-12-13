@@ -101,24 +101,31 @@
         top: 2px;
     }
 
-    form fieldset, form button{
-        width: 70%;
-    }
-
     form fieldset{
         margin-left: 1%;
     }
 
     /* Thanks page */
-
     #thanks{
         font-size: 20px;
         margin: 5% 10% 5% 10%;
     }
-    
     #thanks-message{
         font-size: 20px;
         margin: 5% 10% 10% 10%;
     }
 
+    /* Reservations */
+    .reservations-main{
+        flex-direction: column;
+    }
+
+    .reservations-main form{
+        width: 90%;
+    }
+    #agreement-services{
+        font-size: 12px;
+        margin-right: 0;
+        width: 80%;
+    }
 }
