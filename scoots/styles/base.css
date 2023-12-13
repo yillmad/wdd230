@@ -109,36 +109,16 @@
         margin-left: 1%;
     }
 
-    /* discover */
+    /* Thanks page */
 
-    #sidebar-grid {
-        display: flex;
-        flex-direction: column;
+    #thanks{
+        font-size: 20px;
+        margin: 5% 10% 5% 10%;
     }
-    #sidebar {
-        position: relative;
-        margin: 0 auto;
-    }
-    #detailed-events{
-        margin: 0 auto;
+    
+    #thanks-message{
+        font-size: 20px;
+        margin: 5% 10% 10% 10%;
     }
 
-    /* Directory */
-
-    .directory-grid {
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(9, 1fr);
-    }
-
-    .directory-grid .company-card {
-        width: 80%;
-    }
-
-    .directory-list .company-info {
-        font-size: 13px;
-    }
-
-    .directory-list .company-info {
-        flex-direction: column;
-    }
 }

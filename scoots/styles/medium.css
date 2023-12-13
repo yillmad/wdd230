@@ -584,134 +584,14 @@ option{
 /* thanks page */
 
 #thanks{
-    grid-column: 1/4;
     text-align: center;
     font-size: calc(min(30px + 3vw, 70px));
     margin: 5% 10% 5% 10%;
+    color: var(--black-white);
 }
 
-#tanks-message{
-    grid-row: 2/3;
-    grid-column: 1/4;
+#thanks-message{
     text-align: center;
-    font-size: calc(min(20px + 1vw, 30px));
+    font-size: calc(min(20px + 1vw, 60px));
     margin: 5% 10% 10% 10%;
-}
-
-
-/* Directory */
-.directory-main-grid{
-    display: grid;
-    grid-template-columns: 1fr;
-    width: auto;
-}
-
-/* directory-grid */
-
-#listBtn,#gridBtn {
-    background-color: var(--secondary-color);
-    border: none;
-    border-radius: 10px;
-    cursor: pointer;
-    padding: 10px;
-}
-  
-#listBtn:hover, #gridBtn:hover, .active {
-    background-color: var(--primary-color);
-}
-  
-.directory {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 0.1fr 1fr;
-    grid-template-areas:
-      "header header"
-      "btn btn";
-    grid-gap: 1rem;
-    padding: 1rem;
-    justify-items: center;
-}
-  
-.directory h1 {
-    grid-area: header;
-    font-size: 2rem;
-    color: var(--black-white)
-}
-  
-.directory-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    grid-gap: 1rem;
-    padding: 1rem;
-    text-align: center;
-    justify-items: center;
-}
-  
-.directory-grid a {
-    color: var(--primary-color);
-}
-  
-.directory-grid .company-card {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    background-color:var(--weather-background);
-    width: 90%;
-    border-radius: 10%;
-    padding: 1rem;
-    margin: 1rem;
-    max-width: 20rem;
-}
-  
-.company-logo img {
-    width: 100%;
-    height: auto;
-    border-radius: 10%;
-}
-  
-.company-info {
-    color: white;
-}
-
-/* directory-list */
-.directory-list .company-info {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-    padding: 0.5rem;
-    border: 1px solid black;
-    border-radius: 10px;
-    margin: 0.5rem;
-    background-color: #fff;
-    color: black;
-    font-size: calc(min(9px + 1vw, 20px));  
-}
-  
-.directory-list h3 {
-    color: black;
-}
-  
-.directory-list #companies .company-card:nth-child(even) {
-    background-color: rgb(221, 221, 221);
-}
-
-.directory-list .company-logo{
-    display: none;
-}
-
-.directory-list .company-card{
-    background-color: transparent;
-}
-
-.directory-list .company-info:hover {
-    transform: scale(1.1);
-    transition: 0.5s;
-    box-shadow: 0 0 10px var(--nav-link-color);
-}
-
-.directory-list .company-info .other{
-    display: none;
 }
