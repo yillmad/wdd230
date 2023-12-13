@@ -128,4 +128,42 @@
         margin-right: 0;
         width: 80%;
     }
+
+    
+    /* Rentals */
+
+    table {
+      border: 1px solid #ddd; /* Add a border for better visibility */
+    }
+  
+    /* Hide table headers on small screens */
+    th {
+      display: none;
+    }
+  
+    /* Adjust table data cells for better readability */
+    td {
+      display: block;
+      text-align: left;
+      border: none;
+      position: relative;
+      padding-left: 50%; /* Create space for data labels */
+    }
+  
+    /* Style for data labels in small screens */
+    td:before {
+      content: attr(data-label);
+      font-weight: bold;
+      position: absolute;
+      left: 5px;
+      top: 0;
+    }
+  
+    /* Style for images inside table cells on small screens */
+    td img {
+      max-width: 80px;
+      height: auto;
+      display: block;
+      margin: 0 auto;
+    }
 }

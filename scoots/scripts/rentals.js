@@ -58,7 +58,7 @@ function createRentalTable(data) {
   const headerRow = table.insertRow();
   
   // Create table headers
-  for (const key of ['Images', 'Type', 'Max Persons', 'Reservation Half Day Price', 'Reservation Full Day Price']) {
+  for (const key of ['Images', 'Type', 'Max Persons', 'Reservation Half Day Price', 'Reservation Full Day Price', 'Walk-In Half Day Price', 'Walk-In Full Day Price']) {
     const headerCell = document.createElement('th');
     headerCell.textContent = key;
     headerRow.appendChild(headerCell);
@@ -80,11 +80,19 @@ function createRentalTable(data) {
     const maxPersonsCell = row.insertCell();
     maxPersonsCell.textContent = rental.maxPersons;
 
-    const halfDayPriceCell = row.insertCell();
-    halfDayPriceCell.textContent = rental.Prices[0].Reservation[0].halfDayPrice;
+    const reshalfDayPriceCell = row.insertCell();
+    reshalfDayPriceCell.textContent = `$ ${rental.Prices[0].Reservation[0].halfDayPrice}.00`;
 
-    const fullDayPriceCell = row.insertCell();
-    fullDayPriceCell.textContent = rental.Prices[0].Reservation[0].fullDayPrice;
+    const resfullDayPriceCell = row.insertCell();
+    resfullDayPriceCell.textContent = `$ ${rental.Prices[0].Reservation[0].fullDayPrice}.00`;
+
+    const walkhalfDayPriceCell = row.insertCell();
+    walkhalfDayPriceCell.textContent = `$ ${rental.Prices[0].WalkIn[0].halfDayPrice}.00`;
+
+    const walkfullDayPriceCell = row.insertCell();
+    walkfullDayPriceCell.textContent = `$ ${rental.Prices[0].WalkIn[0].fullDayPrice}.00`;
+
+    
   });
 
   return table;

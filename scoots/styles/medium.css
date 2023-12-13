@@ -578,6 +578,44 @@ option{
 
 /* Reservations */
 
+/* Style for the table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  /* Style for table header cells */
+  th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+    text-align: left;
+    padding: 8px;
+  }
+  
+  /* Alternate row color for better readability */
+  tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  /* Style for table data cells */
+  td {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+  
+  /* Style for images inside table cells */
+  td img {
+    max-width: 100px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+  
+
+/* Reservations */
+
 .reservations-main{
     display: flex;
     align-items: center;
