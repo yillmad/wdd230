@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Scoots</title>
+    <title>Scoots - Rentals</title>
     <meta name="description" content="A platform for rental company of motor scooter.">
     <meta name="author" content="Yill-Cerpa">
     <!-- CSS Linked -->
@@ -23,11 +23,6 @@
 </head>
 <body>
 
-    <div id="temperature-message" class="temperature-message">
-        <button id="close-btn">&times;</button>
-        <span id="temp-max"></span>
-    </div>
-
     <header>
         <a class="logo" href="index.html">
             <img src="images/logo-scoots.webp" alt="Chamber Siye Logo" width="60">
@@ -35,8 +30,8 @@
         <nav>
             <button id="menu"></button>
             <ul class="navigation">
-                <li id="current"><a href="#">Home</a></li>
-                <li><a href="#">Rentals</a></li>
+                <li><a href="#">Home</a></li>
+                <li id="current"><a href="#">Rentals</a></li>
                 <li><a href="#">Reservations</a></li>
                 <li><a href="#">Contact Us</a></li>
             </ul>
@@ -86,25 +81,6 @@
 
     <main class="home-main">
 
-        <section>
-            <div class="swiper mySwiper">
-                <div class="swiper-wrapper">
-                    <!-- information added from Json -->
-                </div>
-            <div class="swiper-pagination"></div>
-            </div>
-        </section>
-
-        <div class="info-button-box">
-            <button class="info-btn">More Information</button>
-        </div>
-
-        <div id="weather">
-            <div class="chill">
-                Wind Chill <span class="wind-chill">21 °C</span>
-            </div>
-        </div>
-
 
     </main>
 
@@ -134,10 +110,7 @@
 <!-- scripts -->
 <script src="scripts/hambutton.js"></script>
 <script src="scripts/darkmode.js"></script>
-<script src="scripts/swiper-bundle.min.js"></script>
-<script src="scripts/swipe.js"></script>
-<script src="scripts/swiper-types.js"></script>
-<script src="scripts/weather.js"></script>
+<script src="scripts/rentals.js"></script>
 <script src="scripts/dates.js"></script>
 
 </body>

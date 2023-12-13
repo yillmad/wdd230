@@ -84,6 +84,8 @@
     }
     #weather{
         margin-bottom: 2.5rem;
+        margin-left: 10%;
+        margin-right: 10%;
     }
 
     /* form and table */

@@ -37,7 +37,7 @@ body{
     --primary-color: #343536;
     --secondary-color: #18191b;
     --accent1-color: #18191b;
-    --accent2-color: #343536;
+    --accent2-color: #000000;
     --background-color: #343536;
     --black-white: #FFFFFF;
     --hero-box-background: rgba(0,0,0,0.8);
@@ -58,7 +58,7 @@ body{
 #close-btn{
     border: none;
     background-color: var(--accent2-color);
-    color: var(--black);
+    color: var(--black-white);
     font-size: 25px;
     border-radius: 1px;
     width: 30px;
@@ -202,7 +202,7 @@ nav ul li{
     align-items: center;
     flex-direction: column;
     color: var(--black-white);
-    font-size: calc(min(10px + 1vw, 80px ));
+    font-size: calc(min(13px + 1vw, 80px ));
 }
 
 .swiper-slide img {
@@ -210,6 +210,17 @@ nav ul li{
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+.info-button-box{
+    display: flex;
+    justify-content: center;
+}
+.info-btn{
+    background-color: var(--accent2-color);
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    color: var(--white);
 }
 
 /* main */

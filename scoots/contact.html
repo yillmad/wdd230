@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Scoots</title>
+    <title>Scoots - Contact</title>
     <meta name="description" content="A platform for rental company of motor scooter.">
     <meta name="author" content="Yill-Cerpa">
     <!-- CSS Linked -->
@@ -23,11 +23,6 @@
 </head>
 <body>
 
-    <div id="temperature-message" class="temperature-message">
-        <button id="close-btn">&times;</button>
-        <span id="temp-max"></span>
-    </div>
-
     <header>
         <a class="logo" href="index.html">
             <img src="images/logo-scoots.webp" alt="Chamber Siye Logo" width="60">
@@ -35,10 +30,10 @@
         <nav>
             <button id="menu"></button>
             <ul class="navigation">
-                <li id="current"><a href="#">Home</a></li>
+                <li><a href="#">Home</a></li>
                 <li><a href="#">Rentals</a></li>
                 <li><a href="#">Reservations</a></li>
-                <li><a href="#">Contact Us</a></li>
+                <li id="current"><a href="#">Contact Us</a></li>
             </ul>
         </nav>
     </header>
@@ -86,25 +81,32 @@
 
     <main class="home-main">
 
-        <section>
-            <div class="swiper mySwiper">
-                <div class="swiper-wrapper">
-                    <!-- information added from Json -->
-                </div>
-            <div class="swiper-pagination"></div>
-            </div>
-        </section>
+        <form action="thankyou.html" method="post">
+            <fieldset>
+                <legend>Contact Us</legend>
+    
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+    
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required placeholder="example@example.com">
+    
+                <label for="comments">Comments:</label>
+                <textarea id="comments" name="comments" required></textarea>
+            </fieldset>
+    
+            <button type="submit">Submit</button>
+        </form>
 
-        <div class="info-button-box">
-            <button class="info-btn">More Information</button>
+        <div class="map-container">
+            <h2>Location 1</h2>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7468.160341061303!2d-87.08843903511978!3d20.625588768787836!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f4e433ce9ef3081%3A0x73e73535a132a3f4!2sCentro%2C%20Playa%20del%20Carmen%2C%20Q.R.%2C%20M%C3%A9xico!5e0!3m2!1ses-419!2spe!4v1702474336423!5m2!1ses-419!2spe" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
 
-        <div id="weather">
-            <div class="chill">
-                Wind Chill <span class="wind-chill">21 °C</span>
-            </div>
+        <div class="map-container">
+            <h2>Location 2</h2>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1868.9555391095!2d-86.97954062011446!3d20.46884510357152!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f4e59cd70625421%3A0xb1974a1818657af2!2sCozumel%20Cruise%20Terminal!5e0!3m2!1ses-419!2spe!4v1702474687683!5m2!1ses-419!2spe" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
-
 
     </main>
 
@@ -134,10 +136,6 @@
 <!-- scripts -->
 <script src="scripts/hambutton.js"></script>
 <script src="scripts/darkmode.js"></script>
-<script src="scripts/swiper-bundle.min.js"></script>
-<script src="scripts/swipe.js"></script>
-<script src="scripts/swiper-types.js"></script>
-<script src="scripts/weather.js"></script>
 <script src="scripts/dates.js"></script>
 
 </body>
