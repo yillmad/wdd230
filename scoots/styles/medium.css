@@ -146,7 +146,6 @@ nav ul li{
 .slide img{
     width: 100%;
     height: auto;
-    max-height: auto;
 }
 
 .navigation-manual{
@@ -180,12 +179,12 @@ nav ul li{
 .button-box{
     position: absolute;
     left: 18%;
-    right: 65%;
+    right: 65%; 
     bottom: 10%;
     text-align: center;
 }
 .boton{
-    background-color: var(--accent2-color);
+    background-color: var(--secondary-color);
     padding: 12px 0;
     color: var(--white);
 }
@@ -226,7 +225,7 @@ nav ul li{
     margin: 20px 0 20px 0;
 }
 .info-btn{
-    background-color: var(--accent2-color);
+    background-color: var(--secondary-color);
     border: none;
     border-radius: 5px;
     padding: 10px;
@@ -287,45 +286,7 @@ nav ul li{
     grid-row: 2/3;
     font-size: calc(min(12px + 10vw, 20px));
 }
-/* msg image */
-.msg-img{
-    background-color: var(--primary-color);
-    grid-column: 1/4;
-    display: flex;
-    flex-direction: column;
-    padding: 6%;
-    padding-left: 8%;
-    padding-right: 8%;
-}
-.last-img>img{
-    width: 100%;
-    height: auto;
-    border-radius: 25px;
-}
-.msg{
-    padding: 2rem;
-    background-color: var(--accent1-color);
-    font-size: calc(min(9px + 1vw, 20px));
-    display: flex;
-    flex-direction: column;
-    margin-top: 20px;
-}
-ul>li>p, ul>li>h3, .msg>h2{
-    margin-top: 0;
-    margin-bottom: 0;
-}
-.black-white{
-    color:var(--black-white);
-}
-.black-white:hover{
-    color: var(--accent2-color);
-}
-.msg .boton{
-    text-align: center;
-}
-.msg ul li{
-    margin-bottom: 10px;
-}
+/* boton */
 
 .boton{
     display: block;
@@ -334,7 +295,7 @@ ul>li>p, ul>li>h3, .msg>h2{
     border-radius: 5px;
 }
 .boton:hover{
-    background-color: var(--secondary-color);
+    background-color: var(--accent2-color);
 }
 
 /* footer */
@@ -352,7 +313,7 @@ footer a{
     text-align: center;
 }
 footer a:hover{
-    color: var(--accent1-color);
+    color: var(--accent2-color);
 }
 footer p, footer p~a {
     font-size: 1.2em;
@@ -434,8 +395,7 @@ form label.sbs {
     padding: 0.4rem 0;
 }
 
-  /* CSS for Discover Page */
-
+/* CSS for Discover Page */
 .grid {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
@@ -501,7 +461,7 @@ input, select, textarea {
 
 form button {
     border: none;
-    background-color: var(--accent2-color);
+    background-color: var(--secondary-color);
     color: var(--white);
     border-radius: 1rem;
     padding: .75rem 1.5rem;
@@ -510,7 +470,7 @@ form button {
 }
 
 button:hover{
-    background-color: var(--secondary-color);
+    background-color: var(--accent2-color);
 }
 
 option{
@@ -568,8 +528,6 @@ option{
 
 /* Reservations */
 
-/* Style for the table */
-
 .rentals-main{
     display: flex;
     justify-content: center;
@@ -581,8 +539,7 @@ table {
     margin-bottom: 30px;
     color: var(--black-white);
 }
-  
-  /* Style for table header cells */
+
 th {
     background-color: var(--secondary-color);
     font-weight: bold;
@@ -591,21 +548,18 @@ th {
     text-align: center;
     color: var(--white);
 }
-  
-  /* Alternate row color for better readability */
+
 tr:nth-child(even) {
     background-color: var(--table-even);
 }
-  
-  /* Style for table data cells */
+
 .rentals-main td {
     border: 1px solid var(--white);
     text-align: left;
     padding: 8px;
     text-align: center;
 }
-  
-  /* Style for images inside table cells */
+
 td img {
     max-width: 200px;
     height: auto;
