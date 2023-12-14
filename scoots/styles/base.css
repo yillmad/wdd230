@@ -132,24 +132,24 @@
 
     /* Rentals */
 
-    table {
+    .rentals-main table {
       border: 1px solid #ddd; /* Add a border for better visibility */
     }
   
     /* Hide table headers on small screens */
-    th {
+    .rentals-main th {
       display: none;
     }
   
     /* Adjust table data cells for better readability */
-    td {
+    .rentals-main td {
       display: block;
       border: none;
       position: relative;
     }
   
     /* Style for data labels in small screens */
-    td:before {
+    .rentals-main td:before {
       content: attr(data-label);
       font-weight: bold;
       position: absolute;
@@ -158,7 +158,7 @@
     }
   
     /* Style for images inside table cells on small screens */
-    td img {
+    .rentals-main td img {
       max-width: 300px;
       height: auto;
       display: block;

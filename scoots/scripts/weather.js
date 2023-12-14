@@ -17,6 +17,10 @@ async function apiFetch() {
         if (response.ok && forecast_response.ok) {
             const data = await response.json();
             const forecast = await forecast_response.json();
+
+            // console.log('Weather Data:', data);
+            // console.log('Forecast Data:', forecast);
+
             displayResults(data,forecast);
             calculateWindChill(data);
             displayMaxTemperature(data)
@@ -110,9 +114,7 @@ function calculateWindChill(data) {
   }
 
 
-// new code 
-
-// Inside your script, after the other functions
+// Max temperature code 
 
 function displayMaxTemperature(data) {
     const maxTemp = Math.round(data.main.temp_max);
@@ -125,3 +127,4 @@ function displayMaxTemperature(data) {
         temperatureMessageDiv.style.display = 'none';
     });
 }
+

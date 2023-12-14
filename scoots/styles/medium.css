@@ -296,6 +296,13 @@ nav ul li{
     font-size: calc(min(12px + 10vw, 20px));
 }
 
+#weather th{
+    background-color: transparent;
+}
+#weather table{
+    color: var(--white);
+}
+
 .chill{
     grid-column: 1/3;
     grid-row: 2/3;
@@ -612,7 +619,7 @@ tr:nth-child(even) {
 }
   
   /* Style for table data cells */
-td {
+.rentals-main td {
     border: 1px solid var(--white);
     text-align: left;
     padding: 8px;
